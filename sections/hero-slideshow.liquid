@@ -100,9 +100,7 @@
     </div>
     {% if section.blocks.size > 1 %}
       <div class="splide__arrows mt-5 flex items-center justify-between px-section {% if style == 'full' %}relative lg:absolute z-30 bottom-0 right-0 pb-5{% endif %}">
-        {%- render 'splide-navigation',
-          autoplay: section.settings.auto_rotate
-        -%}
+        {%- render 'splide-navigation', autoplay: section.settings.auto_rotate -%}
       </div>
     {% endif %}
 
@@ -1328,11 +1326,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}

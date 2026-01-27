@@ -70,6 +70,12 @@
     when 'text-right'
       assign mobile_content_below_media_align = 'justify-end'
   endcase
+
+  if forloop.first
+    assign fetchpriority = 'high'
+  else
+    assign fetchpriority = 'low'
+  endif
 %}
 
 <div class="relative z-10 h-full lg:bg-transparent">
@@ -80,11 +86,13 @@
   <div class="{% if crop contains 'slideshow' %}lg:h-full{% endif %} {% if style == 'inset' %}max-w-site px-5 lg:px-10 mx-auto{% endif %}">
     <div class="{{ crop }} {% if style == 'inset' %} media media--css-only h-full w-full{% endif %}">
       {% if image != blank %}
-        {% capture image_tag_output %}{{
+        {% capture image_tag_output %}
+          {{
             image
-            | image_url: width: 2000
-            | image_tag: sizes: sizes, class: image_class, loading: loading, preload: preload
-          }}{% endcapture %}
+            | image_url: width: image.width
+            | image_tag: sizes: sizes, class: image_class, loading: loading, preload: preload, fetchpriority: fetchpriority
+          }}
+        {% endcapture %}
         {%- if image_mobile != blank -%}
           <div class="hidden lg:block">
             {{ image_tag_output }}
@@ -96,12 +104,8 @@
           <div class="lg:hidden">
             {{
               image_mobile
-              | image_url: width: 1200
-              | image_tag:
-                sizes: '100vw',
-                class: image_class,
-                loading: loading,
-                preload: preload
+              | image_url: width: image_mobile.width
+              | image_tag: sizes: '100vw', class: image_class, loading: loading, preload: preload
             }}
           </div>
         {%- endif -%}
@@ -132,7 +136,7 @@
         >
           {{
             logo
-            | image_url: width: 3000
+            | image_url: width: logo.width
             | image_tag:
               class: 'w-full',
               width: logo.width,

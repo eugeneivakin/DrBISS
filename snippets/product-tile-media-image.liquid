@@ -42,12 +42,18 @@
   endunless
 
   unless widths
-    assign widths = '200, 350, 450, 750, 850, 960, 1280, 1440, 1536, 1706, 1782, 1920, 2560, 2880, 3000'
+    assign widths = '135, 270, 540, 1080'
   endunless
 
   unless sizes
-    assign sizes = '100vw'
+    assign sizes = '(max-width: 768px) 50vw, 25vw'
   endunless
+
+  if forloop_first
+    assign fetchpriority = 'high'
+  else
+    assign fetchpriority = 'low'
+  endif
 -%}
 
 {%- if shape contains 'default' or shape == '' or shape == blank -%}
@@ -55,7 +61,7 @@
     <div class="media__styled-element {{ crop_class }}">
       {{
         media
-        | image_url: width: 2000
+        | image_url: width: media.width
         | image_tag:
           class: media_element_class,
           onerror: 'this.style.color="currentColor"',
@@ -63,7 +69,8 @@
           preload: preload,
           loading: loading,
           widths: widths,
-          sizes: sizes
+          sizes: sizes,
+          fetchpriority: fetchpriority
       }}
       {%- if hover_image != blank -%}
         <div
@@ -71,7 +78,7 @@
         >
           {{
             hover_image
-            | image_url: width: 2000
+            | image_url: width: hover_imag.width
             | image_tag:
               class: hover_image_class,
               onerror: 'this.style.color="currentColor"',
@@ -91,7 +98,7 @@
             >
               {{
                 media
-                | image_url: width: 2000
+                | image_url: width: media.width
                 | image_tag:
                   class: variant_image_class,
                   onerror: 'this.style.color="currentColor"',
@@ -118,7 +125,7 @@
       >
         {{
           media
-          | image_url: width: 2000
+          | image_url: width: media.width
           | image_tag:
             class: clip_path_media_class,
             onerror: 'this.style.color="currentColor"',
@@ -126,7 +133,8 @@
             preload: preload,
             loading: loading,
             widths: widths,
-            sizes: sizes
+            sizes: sizes,
+            fetchpriority: fetchpriority
         }}
 
         {%- if hover_image != blank -%}
@@ -135,7 +143,7 @@
           >
             {{
               hover_image
-              | image_url: width: 2000
+              | image_url: width: hover_image.width
               | image_tag:
                 class: hover_image_class,
                 onerror: 'this.style.color="currentColor"',
@@ -156,7 +164,7 @@
               >
                 {{
                   media
-                  | image_url: width: 2000
+                  | image_url: width: media.width
                   | image_tag:
                     class: variant_image_class,
                     onerror: 'this.style.color="currentColor"',
@@ -187,10 +195,7 @@
     {%- comment -%}
       Drop shadow and border
     {%- endcomment -%}
-    {%- if settings.media_drop_shadow_size > 0
-      and is_card == false
-      and disable_media_style == false
-    -%}
+    {%- if settings.media_drop_shadow_size > 0 and is_card == false and disable_media_style == false -%}
       <div class="media__drop-shadow-container">
         {%- unless settings.media_shadow_color == 'color-scheme-gradient' -%}
           <svg
