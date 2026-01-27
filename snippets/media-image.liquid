@@ -41,7 +41,7 @@
     {%- unless media == blank -%}
       {{
         media
-        | image_url: width: 3000
+        | image_url: width: media.width
         | image_tag:
           class: media_element_class,
           loading: loading,

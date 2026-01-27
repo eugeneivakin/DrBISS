@@ -1,3 +1,4 @@
+{{ forloop.index  }}
 {%- liquid
   assign crop = crop | default: settings.product_tiles_aspect_ratio
   assign shape = shape | default: settings.product_tile_media_shape
@@ -121,7 +122,7 @@
               index: index,
               preload: preload,
               loading: loading,
-              sizes: sizes,
+              forloop_first: forloop.first,
               will_transform: will_transform
             -%}
           </div>
