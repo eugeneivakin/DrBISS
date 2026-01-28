@@ -1,1 +1,236 @@
-{"sections":{"hero_slideshow_n4GQYX":{"type":"hero-slideshow","blocks":{"slide_CBjAAz":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/e82420cffcdd026e1b63f947c8526a55_1.jpg","title":"Handcrafted Natural Soaps","richtext":"Pure ingredients for your everyday care","cta_url":"shopify:\/\/collections\/frontpage","cta_text":"Shop Now","place_content":"place-content-end-start","text_align":"text-left"}}},"block_order":["slide_CBjAAz"],"name":"t:sections.hero_slideshow.name","settings":{"style":"full","height":"pt-screen-height","display_on_card":true,"display_content_below_image_on_mobile":false,"auto_rotate":false,"slide_speed":"5000","place_content":"place-content-center-start","text_align":"text-left","heading_size":"heading-standard","color_scheme":"scheme5","use_gradient_background":false}},"icon-list":{"type":"icon-list","blocks":{"icon-0":{"type":"icon","settings":{"icon":"plane","text":"Bringing Soap to the World"}},"icon-1":{"type":"icon","disabled":true,"settings":{"icon":"alcohol_free","text":"Alcohol free"}},"icon-2":{"type":"icon","disabled":true,"settings":{"icon":"paraben_free","text":"Paraben free"}},"icon-3":{"type":"icon","settings":{"icon":"return","text":"Easy Returns"}},"icon-4":{"type":"icon","settings":{"icon":"clock","text":"Fast Delivery"}},"icon-5":{"type":"icon","settings":{"icon":"leaf","text":"Eco-Friendly"}}},"block_order":["icon-0","icon-1","icon-2","icon-3","icon-4","icon-5"],"settings":{"title":"","max_width":80,"text_style":"body","uppercase_text":false,"layout_on_mobile":"wrap","icon_alignment_on_desktop":"md:justify-between","icon_thickness":1.3,"background_color":"bg-scheme-card text-scheme-card-text","show_border":true,"color_scheme":"scheme1","use_gradient_background":false}},"featured_collection_EJRNFC":{"type":"featured-collection","blocks":{"tab_BWJM9g":{"type":"tab","settings":{"tab_name":"Bundles & Gift Sets","collection":"frontpage","tab_layout":"grid","tab_products_per_row_desktop":4,"tab_product_tiles_aspect_ratio":"","tab_image_shape":"default","tab_slideshow_focus":"center","tab_mobile_slide_width":"three_fifths","tab_desktop_slide_width":40,"tab_autoscroll_mode":"1"}},"tab_ahH8Hg":{"type":"tab","settings":{"tab_name":"Liquid Soaps","collection":"bundles","tab_layout":"grid","tab_products_per_row_desktop":4,"tab_product_tiles_aspect_ratio":"","tab_image_shape":"default","tab_slideshow_focus":"center","tab_mobile_slide_width":"three_fifths","tab_desktop_slide_width":40,"tab_autoscroll_mode":"1"}},"tab_BJxaca":{"type":"tab","settings":{"tab_name":"Bar Soaps","collection":"frontpage","tab_layout":"grid","tab_products_per_row_desktop":4,"tab_product_tiles_aspect_ratio":"","tab_image_shape":"default","tab_slideshow_focus":"center","tab_mobile_slide_width":"three_fifths","tab_desktop_slide_width":40,"tab_autoscroll_mode":"1"}},"tab_dVgAbe":{"type":"tab","settings":{"tab_name":"Essential Oils","collection":"frontpage","tab_layout":"grid","tab_products_per_row_desktop":4,"tab_product_tiles_aspect_ratio":"","tab_image_shape":"default","tab_slideshow_focus":"center","tab_mobile_slide_width":"three_fifths","tab_desktop_slide_width":40,"tab_autoscroll_mode":"1"}},"tab_axWq4t":{"type":"tab","settings":{"tab_name":"Diffusers","collection":"frontpage","tab_layout":"grid","tab_products_per_row_desktop":4,"tab_product_tiles_aspect_ratio":"","tab_image_shape":"default","tab_slideshow_focus":"center","tab_mobile_slide_width":"three_fifths","tab_desktop_slide_width":40,"tab_autoscroll_mode":"1"}}},"block_order":["tab_BWJM9g","tab_ahH8Hg","tab_BJxaca","tab_dVgAbe","tab_axWq4t"],"name":"t:sections.featured_collection.name","settings":{"title":"What's At Dr. Biss","subheading":"","collection":"bundles","no_products":4,"show_view_all":false,"enable_quick_buy":false,"display_on_card":false,"layout":"tabs","products_per_row_mobile":"1","products_per_row_desktop":4,"slideshow_focus":"center","mobile_slide_width":"three_fifths","desktop_slide_width":40,"autoscroll_mode":"1","product_tiles_aspect_ratio":"","image_shape":"","color_scheme":"","use_gradient_background":false,"button_text":"","button_link":"","button_color":"","button_text_color":"","button_position":"center"}},"featured_collection_frwb7T":{"type":"featured-collection","name":"t:sections.featured_collection.name","settings":{"title":"Bestsellers","subheading":"","collection":"bestsellers","no_products":4,"show_view_all":false,"enable_quick_buy":false,"display_on_card":false,"layout":"grid","products_per_row_mobile":"1","products_per_row_desktop":4,"slideshow_focus":"center","mobile_slide_width":"three_fifths","desktop_slide_width":40,"autoscroll_mode":"1","product_tiles_aspect_ratio":"","image_shape":"default","color_scheme":"","use_gradient_background":false,"button_text":"","button_link":"","button_color":"","button_text_color":"","button_position":"center"}},"image-with-text-overlay":{"type":"image-with-text-overlay","blocks":{"shape-divider-image-with-text-overlay-0":{"type":"shape_divider","settings":{"target_section":"below","target_section_color_scheme":"scheme2","style":"waves-2-patterned_1200x43","flip_horizontal":false,"enable_animation":false,"animation_direction":"reverse"}},"sticker":{"type":"sticker","settings":{"width":190,"half_width_on_mobile":true,"text":"Feel good<br>Skincare","shape":"scalloped_circle_6","sticker_font_size":"1.953rem","horizontal_position":82,"vertical_position":31,"rotate":24,"show_sticker_on_mobile":true,"show_sticker_on_desktop":true,"rotation_animation":"rotate_when_scrolling","enable_parallax":true,"parallax_speed":3,"color_scheme":"scheme1","color":"bg-scheme-accent-1 text-scheme-accent-1-contrast"}}},"block_order":["shape-divider-image-with-text-overlay-0","sticker"],"disabled":true,"settings":{"display_on_card":false,"display_content_below_image_on_mobile":false,"style":"full","height":"pt-two-thirds-screen-height","place_content":"place-content-center-center","text_align":"text-center","title":"Where beauty meets wellness.","heading_size":"heading-feature","richtext":"Skincare that's good for you and good for the planet.","cta_url":"","cta_text":"Shop Now","color_scheme":"scheme1","use_gradient_background":false}},"feature-text":{"type":"feature-text","disabled":true,"settings":{"rich_text":"Healthy skin is beautiful skin. Our Aura offers the essential care your skin craves to radiate its natural glow every day.","mobile_text_scale":2,"desktop_text_scale":8,"display_on_card":false,"apply_effects":false,"content_width_desktop":"lg:w-full","button_link":"","button_label":"Shop Now","color_scheme":"scheme2","use_gradient_background":false}},"featured_collection_q4iPrT":{"type":"featured-collection","name":"t:sections.featured_collection.name","settings":{"title":"New Arrivals","subheading":"","collection":"frontpage","no_products":4,"show_view_all":false,"enable_quick_buy":false,"display_on_card":false,"layout":"grid","products_per_row_mobile":"1","products_per_row_desktop":4,"slideshow_focus":"center","mobile_slide_width":"three_fifths","desktop_slide_width":40,"autoscroll_mode":"1","product_tiles_aspect_ratio":"","image_shape":"default","color_scheme":"","use_gradient_background":false,"button_text":"","button_link":"","button_color":"","button_text_color":"","button_position":"center"}},"featured_collection_HP4gGc":{"type":"featured-collection","disabled":true,"name":"t:sections.featured_collection.name","settings":{"title":"Collections","subheading":"","collection":"frontpage","no_products":4,"show_view_all":false,"enable_quick_buy":false,"display_on_card":false,"layout":"grid","products_per_row_mobile":"1","products_per_row_desktop":4,"slideshow_focus":"center","mobile_slide_width":"three_fifths","desktop_slide_width":40,"autoscroll_mode":"1","product_tiles_aspect_ratio":"","image_shape":"","color_scheme":"","use_gradient_background":false,"button_text":"","button_link":"","button_color":"","button_text_color":"","button_position":"center"}},"collection-focus-carousel":{"type":"collection-focus-carousel","disabled":true,"settings":{"title":"Essentials","subheading":"Explore our classic skincare range.","collection":"all","no_products":8,"enable_focused_quick_buy":false,"focused_slide_source":"description","focused_slide_metafield":"","display_on_card":false,"enlarge_active_slide":true,"mobile_slide_width":"three_fifths","desktop_slide_width":40,"product_tiles_aspect_ratio":"","image_shape":"","color_scheme":"","use_gradient_background":false}},"image-with-highlights":{"type":"image-with-highlights","blocks":{"highlight-0":{"type":"highlight","settings":{"title":"Nature's purest ingredients","text":"Aura uses sustainably sourced botanicals to create balms and serums that nurture your skin while being kind to the planet.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"highlight-1":{"type":"highlight","settings":{"title":"Eco-conscious packaging","text":"Aura’s packaging is fully recyclable and made from eco-friendly materials, minimizing waste and reducing your carbon footprint.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"highlight-2":{"type":"highlight","settings":{"title":"Cruelty-free and vegan","text":"All Aura products are cruelty-free and vegan, ensuring no harm to animals in the creation of our skincare line.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"highlight-3":{"type":"highlight","settings":{"title":"Mindful formulations","text":"Each Aura product is carefully crafted to deliver effective results without harsh chemicals, prioritizing your skin’s health and well-being.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"highlight-4":{"type":"highlight","settings":{"title":"Feel-good rituals","text":"Aura products are designed to create a moment of self-care, helping you feel good both inside and out.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"highlight-5":{"type":"highlight","settings":{"title":"Sustainable sourcing","text":"We prioritize sustainability in our ingredient sourcing, working with suppliers who share our commitment to ethical and eco-friendly practices.","cta_link":"","cta_text":"","override_section_color_scheme":false,"color_scheme":""}},"shape-divider-image-with-highlights-0":{"type":"shape_divider","settings":{"target_section":"above","target_section_color_scheme":"scheme1","style":"waves-3-patterned_1200x84","flip_horizontal":false,"enable_animation":false,"animation_direction":""}},"shape-divider-image-with-highlights-1":{"type":"shape_divider","settings":{"target_section":"below","target_section_color_scheme":"scheme1","style":"waves-3-patterned_1200x84","flip_horizontal":false,"enable_animation":false,"animation_direction":""}}},"block_order":["highlight-0","highlight-1","highlight-2","highlight-3","highlight-4","highlight-5","shape-divider-image-with-highlights-0","shape-divider-image-with-highlights-1"],"disabled":true,"settings":{"title":"Made with care","block_alignment_on_desktop":"justify-center","display_on_card":false,"slideshow_on_mobile":true,"slideshow_focus":"center","max_width":320,"crop":"","image_shape":"default","blob_type":3,"rotate_image":0,"disable_media_style":true,"color_scheme":"scheme2","use_gradient_background":false}},"featured-collection":{"type":"featured-collection","disabled":true,"settings":{"title":"Serums","subheading":"Elevate your routine with our collection of serums.","collection":"all","no_products":4,"show_view_all":false,"enable_quick_buy":true,"display_on_card":false,"layout":"carousel","products_per_row_mobile":"2","products_per_row_desktop":4,"slideshow_focus":"left","mobile_slide_width":"three_fifths","desktop_slide_width":40,"autoscroll_mode":"0","product_tiles_aspect_ratio":"","image_shape":"","color_scheme":"scheme1","use_gradient_background":false,"button_text":"","button_link":"","button_color":"","button_text_color":"","button_position":"center"}},"video-with-text-overlay":{"type":"video-with-text-overlay","blocks":{"shape-divider-video-with-text-overlay-0":{"type":"shape_divider","settings":{"target_section":"above","target_section_color_scheme":"scheme1","style":"waves-2-patterned_1200x43","flip_horizontal":true,"enable_animation":false,"animation_direction":""}},"shape-divider-video-with-text-overlay-1":{"type":"shape_divider","settings":{"target_section":"below","target_section_color_scheme":"scheme4","style":"waves-2-patterned_1200x43","flip_horizontal":true,"enable_animation":false,"animation_direction":""}}},"block_order":["shape-divider-video-with-text-overlay-0","shape-divider-video-with-text-overlay-1"],"disabled":true,"settings":{"crop":"vertical","crop_desktop":"widescreen","display_on_card":false,"display_content_below_image_on_mobile":true,"style":"full","place_content":"place-content-center-center","text_align":"text-center","title":"Glow with purpose","heading_size":"heading-feature","richtext":"Discover the story behind Aura.","cta_url":"","cta_text":"About us","color_scheme":"scheme5","use_gradient_background":false}},"text-columns-with-images":{"type":"text-columns-with-images","blocks":{"column-0":{"type":"column","settings":{"show_image":true,"title":"Simple ingredients","text":"<p>We don’t need too many. Just simple, straightforward ingredients that everyone understands. <\/p>","cta_link":"","cta_text":"","override_section_color_scheme":true,"color_scheme":"scheme1"}},"column-1":{"type":"column","settings":{"show_image":true,"title":"Less is more","text":"<p>Our formulation principle: Keep It Simple. With as few ingredients as possible.  <\/p>","cta_link":"","cta_text":"","override_section_color_scheme":true,"color_scheme":"same_as_section"}},"column-2":{"type":"column","settings":{"show_image":true,"title":"Skincare simplified","text":"<p>You don’t have to change your routine. Just simply incorporate our product into your beauty ritual.<\/p>","cta_link":"","cta_text":"","override_section_color_scheme":true,"color_scheme":"same_as_section"}},"shape-divider-text-columns-with-images-0":{"type":"shape_divider","settings":{"target_section":"below","target_section_color_scheme":"scheme6","style":"waves-3-patterned_1200x84","flip_horizontal":false,"enable_animation":false,"animation_direction":""}},"shape-divider-text-columns-with-images-1":{"type":"shape_divider","settings":{"target_section":"below","target_section_color_scheme":"scheme1","style":"curve-shape_1440x149","flip_horizontal":false,"enable_animation":false,"animation_direction":""}}},"block_order":["column-0","column-1","column-2","shape-divider-text-columns-with-images-0","shape-divider-text-columns-with-images-1"],"disabled":true,"settings":{"display_on_card":true,"slideshow_on_mobile":false,"title":"The Aura effect","crop":"aspect-w-1 aspect-h-1","image_shape":"default_pill","show_index_on_blocks":true,"index_shape":"scalloped_circle_2","color_scheme":"scheme4","use_gradient_background":false}},"comparison-table":{"type":"comparison-table","blocks":{"row-0":{"type":"row","settings":{"title":"Eco-friendly packaging","column_1_icon":"check_mark","column_1_text":"","column_2_icon":"check_close","column_2_text":"","column_3_icon":"check_close","column_3_text":"","column_4_icon":"check_close","column_4_text":""}},"row-1":{"type":"row","settings":{"title":"Cruelty-free certified","column_1_icon":"check_mark","column_1_text":"","column_2_icon":"check_close","column_2_text":"","column_3_icon":"check_close","column_3_text":"","column_4_icon":"check_close","column_4_text":""}},"row-2":{"type":"row","settings":{"title":"Ethically sourced ingredients","column_1_icon":"check_mark","column_1_text":"","column_2_icon":"check_close","column_2_text":"","column_3_icon":"check_close","column_3_text":"","column_4_icon":"check_close","column_4_text":""}},"row-3":{"type":"row","settings":{"title":"Registered B Corp","column_1_icon":"check_mark","column_1_text":"","column_2_icon":"check_close","column_2_text":"","column_3_icon":"","column_3_text":"","column_4_icon":"","column_4_text":""}}},"block_order":["row-0","row-1","row-2","row-3"],"disabled":true,"settings":{"title":"How we compare","display_on_card":false,"max_width":"max-w-2xl","highlighted_column":"1","highlighted_column_color":"accent-1","show_scroll_left_to_right_on_mobile":true,"column_1_title":"Aura","column_2_title":"Big corporate skincare brands","enable_column_3":false,"column_3_title":"Column 3","enable_column_4":false,"column_4_title":"Column 4","icon_thickness":1.5,"background_color":"bg-scheme-card text-scheme-card-text","show_border":true,"color_scheme":"","use_gradient_background":false}},"curved-text":{"type":"curved-text","disabled":true,"settings":{"text":"good for you and good for the environment.","link":"","wave_height":210,"wave_width":600,"speed":1,"mobile_text_scale":3,"desktop_text_scale":5,"font":"font-heading","enable_animation":true,"pause_on_hover":true,"direction":"ltr","color_scheme":"scheme1","use_gradient_background":false}},"logo-list":{"type":"logo-list","blocks":{"logo-0":{"type":"logo","settings":{"link":""}},"logo-1":{"type":"logo","settings":{"link":""}},"logo-2":{"type":"logo","settings":{"link":""}},"logo-3":{"type":"logo","settings":{"link":""}},"logo-4":{"type":"logo","settings":{"link":""}},"logo-5":{"type":"logo","settings":{"link":""}}},"block_order":["logo-0","logo-1","logo-2","logo-3","logo-4","logo-5"],"disabled":true,"settings":{"title":"As seen in","max_width":180,"color_scheme":"scheme1","use_gradient_background":false}},"testimonials":{"type":"testimonials","blocks":{"testimonial-0":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Smells amazing. Skin feels soft, moisturized.","source":"Libby S."}},"testimonial-1":{"type":"testimonial","settings":{"rating":"5_stars","quote":"After two weeks of religiously using it,my skin is more supple than it was before.","source":"Jane F."}},"testimonial-2":{"type":"testimonial","settings":{"rating":"5_stars","quote":"I love it! I always wake up with a hydrated and soft skin the next day.","source":"Charlie D."}},"testimonial-3":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Now the best part of my morning routine!","source":"Grace K."}},"testimonial-4":{"type":"testimonial","settings":{"rating":"5_stars","quote":"I've been obsessed since launch. Their products smell so so good and feel so smooth.","source":"Amara C."}},"tsetimonial-5":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Only a few days using this product and I love it! It's leaving my face soft and shining.","source":"Sarah P."}}},"block_order":["testimonial-0","testimonial-1","testimonial-2","testimonial-3","testimonial-4","tsetimonial-5"],"disabled":true,"settings":{"display_on_card":true,"title":"Don’t just listen to us","max_width":140,"disable_media_style":false,"crop":"","image_shape":"triple_pill_2","desktop_slide_width":20,"autoscroll_mode":"1","color_scheme":"scheme1","use_gradient_background":false}},"blog-posts":{"type":"blog-posts","disabled":true,"settings":{"display_on_card":true,"posts_per_row_desktop":3,"title":"From the blog","blog":"","post_limit":3,"crop":"aspect-w-4 aspect-h-3","image_shape":"default","blog_show_author":false,"blog_show_date":true,"show_post_excerpt":false,"show_view_all":true,"color_scheme":"","use_gradient_background":false}},"scrolling-text-with-icons":{"type":"scrolling-text-with-icons","blocks":{"text-0":{"type":"text","settings":{"text":"Free shipping worldwide","icon":"globe"}},"text-1":{"type":"text","settings":{"text":"Environmentally friendly","icon":"leaf"}},"text-2":{"type":"text","settings":{"text":"24\/7 support","icon":"chat_bubble"}},"text-3":{"type":"text","settings":{"text":"Good for you","icon":"heart"}},"text-4":{"type":"text","settings":{"text":"Vegan","icon":"vegan"}}},"block_order":["text-0","text-1","text-2","text-3","text-4"],"disabled":true,"settings":{"repeat_text":true,"link":"","font":"body","gap":"gap-20","icon_size":"size-10","speed":120,"direction":"","icon_thickness":1.5,"background_color":"bg-transparent text-scheme-text","show_border":true,"color_scheme":"","use_gradient_background":false}},"testimonials_VW9gz8":{"type":"testimonials","blocks":{"testimonial_n6teFE":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Absolutely love this soap! It smells amazing, feels so gentle on the skin, and leaves me feeling refreshed every time. Definitely a top pick!","source":"Source"}},"testimonial_CAUQrK":{"type":"testimonial","settings":{"rating":"5_stars","quote":"This soap is fantastic! Super moisturizing, great fragrance, and lasts a long time. Totally worth buying!","source":"Source"}},"testimonial_CC7EQG":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Hands down the best soap I’ve tried! Softens skin, smells heavenly, and gives such a luxurious feel. Highly recommend!","source":"Source"}},"testimonial_YbNTc8":{"type":"testimonial","settings":{"rating":"5_stars","quote":"Incredible soap! Very high quality, works wonders on my skin, and I can’t get enough of it. A must-have!","source":"Source"}}},"block_order":["testimonial_n6teFE","testimonial_CAUQrK","testimonial_CC7EQG","testimonial_YbNTc8"],"name":"t:sections.testimonials.name","settings":{"display_on_card":true,"title":"Reviews","max_width":100,"disable_media_style":false,"crop":"","image_shape":"default","desktop_slide_width":20,"autoscroll_mode":"1","color_scheme":"","use_gradient_background":false}},"newsletter":{"type":"newsletter","blocks":{"shape-divider-newsletter-0":{"type":"shape_divider","disabled":true,"settings":{"target_section":"above","target_section_color_scheme":"scheme1","style":"waves-2-patterned_1200x43","flip_horizontal":false,"enable_animation":false,"animation_direction":""}},"shape-divider-newsletter-1":{"type":"shape_divider","disabled":true,"settings":{"target_section":"below","target_section_color_scheme":"scheme1","style":"waves-2-patterned_1200x43","flip_horizontal":false,"enable_animation":false,"animation_direction":""}}},"block_order":["shape-divider-newsletter-0","shape-divider-newsletter-1"],"settings":{"title":"Sign up to our newsletter","richtext":"<p>Receive special offers and first look at new products.<\/p>","display_on_card":false,"color_scheme":"scheme3","use_gradient_background":false}}},"order":["hero_slideshow_n4GQYX","icon-list","featured_collection_EJRNFC","featured_collection_frwb7T","image-with-text-overlay","feature-text","featured_collection_q4iPrT","featured_collection_HP4gGc","collection-focus-carousel","image-with-highlights","featured-collection","video-with-text-overlay","text-columns-with-images","comparison-table","curved-text","logo-list","testimonials","blog-posts","scrolling-text-with-icons","testimonials_VW9gz8","newsletter"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_slideshow_n4GQYX": {
+      "type": "hero-slideshow",
+      "blocks": {
+        "slide_CBjAAz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1.jpg",
+            "title": "Handcrafted Natural Soaps",
+            "richtext": "Pure ingredients for your everyday care",
+            "cta_url": "shopify://collections/frontpage",
+            "cta_text": "Shop Now",
+            "place_content": "place-content-end-start",
+            "text_align": "text-left"
+          }
+        }
+      },
+      "block_order": ["slide_CBjAAz"],
+      "name": "t:sections.hero_slideshow.name",
+      "settings": {
+        "style": "full",
+        "height": "pt-screen-height",
+        "display_on_card": true,
+        "display_content_below_image_on_mobile": false,
+        "auto_rotate": false,
+        "slide_speed": "5000",
+        "place_content": "place-content-center-start",
+        "text_align": "text-left",
+        "heading_size": "heading-standard",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
+      }
+    },
+    "featured_collection_q4iPrT": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "subheading": "",
+        "collection": "bar-soaps",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "featured_collection_e9KEMA": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "bundles-gift-sets",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "featured_collection_frwb7T": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "subheading": "",
+        "collection": "diffusers",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "featured_collection_pTbqFA": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "essential-oils",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "featured_collection_gNN4TE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "liquid-soaps",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "shape-divider-newsletter-0": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "above",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        },
+        "shape-divider-newsletter-1": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": ["shape-divider-newsletter-0", "shape-divider-newsletter-1"],
+      "settings": {
+        "title": "Sign up to our newsletter",
+        "richtext": "<p>Receive special offers and first look at new products.</p>",
+        "display_on_card": false,
+        "color_scheme": "scheme3",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "hero_slideshow_n4GQYX",
+    "featured_collection_q4iPrT",
+    "featured_collection_e9KEMA",
+    "featured_collection_frwb7T",
+    "featured_collection_pTbqFA",
+    "featured_collection_gNN4TE",
+    "newsletter"
+  ]
+}
