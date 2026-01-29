@@ -11,7 +11,13 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
-      "settings": { "separator": "\/", "text_alignment": "justify-center", "font_size": "text-base", "active_text_color": "text", "color_scheme": "" }
+      "settings": {
+        "separator": "/",
+        "text_alignment": "justify-center",
+        "font_size": "text-base",
+        "active_text_color": "text",
+        "color_scheme": ""
+      }
     },
     "main": {
       "type": "main-product",
@@ -28,10 +34,114 @@
             "show_border": false
           }
         },
-        "title": { "type": "title", "settings": { "display_on_card": false, "text_align": "text-left" } },
-        "price": { "type": "price", "settings": { "display_on_card": false, "show_on_sale_sticker": false, "text_align": "text-left" } },
-        "description": { "type": "description", "settings": { "display_on_card": true, "truncate_description": false, "text_align": "text-left" } },
-        "quantity-selector": { "type": "quantity_selector", "settings": { "display_on_card": false, "show_label": true } },
+        "title": {
+          "type": "title",
+          "settings": {
+            "display_on_card": false,
+            "text_align": "text-left"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "display_on_card": false,
+            "show_on_sale_sticker": false,
+            "text_align": "text-left"
+          }
+        },
+        "collapsible_tab_ywppTL": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Overview",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.overview | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_zdqV9P": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Long description",
+            "uppercase_text": false,
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_43aR9B": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Why you'll love it",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.why_you_ll_love_it | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_3ceYfA": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Sustainability",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.sustainability | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_VBLH7z": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Product safety",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.product_safety | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_8jFdRx": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Ingredients",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_BgEaPT": {
+          "type": "collapsible_tab",
+          "settings": {
+            "display_on_card": false,
+            "icon": "none",
+            "heading": "Directions",
+            "uppercase_text": false,
+            "content": "{{ product.metafields.custom.directions | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "display_on_card": true,
+            "truncate_description": false,
+            "text_align": "text-left"
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "display_on_card": false,
+            "show_label": true
+          }
+        },
         "variant-picker": {
           "type": "variant_picker",
           "settings": {
@@ -55,11 +165,23 @@
         },
         "complementary": {
           "type": "complementary",
-          "settings": { "block_heading": "Pairs well with", "product_list_limit": 10, "product_tile_style": "mini", "enable_quick_buy": true }
+          "settings": {
+            "block_heading": "Pairs well with",
+            "product_list_limit": 10,
+            "product_tile_style": "mini",
+            "enable_quick_buy": true
+          }
         },
-        "spacer": { "type": "spacer", "settings": { "height": 5 } },
+        "spacer": {
+          "type": "spacer",
+          "disabled": true,
+          "settings": {
+            "height": 5
+          }
+        },
         "icon-row": {
           "type": "icon_row",
+          "disabled": true,
           "settings": {
             "display_on_card": true,
             "uppercase_text": false,
@@ -82,6 +204,7 @@
         },
         "features-list": {
           "type": "features_list",
+          "disabled": true,
           "settings": {
             "display_on_card": true,
             "uppercase_text": false,
@@ -101,13 +224,13 @@
             "display_on_card": false,
             "uppercase_heading": false,
             "heading_1": "Ingredients",
-            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.<\/p>",
+            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.</p>",
             "page_content_1": "",
             "heading_2": "Shipping & delivery",
-            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.<\/p>",
+            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.</p>",
             "page_content_2": "",
             "heading_3": "",
-            "content_3": "<p>Display content in this tab<\/p>",
+            "content_3": "<p>Display content in this tab</p>",
             "page_content_3": "",
             "tab_style": "underline",
             "tab_color": "text"
@@ -118,6 +241,13 @@
         "tags",
         "title",
         "price",
+        "collapsible_tab_ywppTL",
+        "collapsible_tab_zdqV9P",
+        "collapsible_tab_43aR9B",
+        "collapsible_tab_3ceYfA",
+        "collapsible_tab_VBLH7z",
+        "collapsible_tab_8jFdRx",
+        "collapsible_tab_BgEaPT",
         "description",
         "quantity-selector",
         "variant-picker",
@@ -176,7 +306,10 @@
           }
         }
       },
-      "block_order": ["shape-divider-feature-text-0", "shape-divider-feature-text-1"],
+      "block_order": [
+        "shape-divider-feature-text-0",
+        "shape-divider-feature-text-1"
+      ],
       "settings": {
         "rich_text": "This lightweight balm melts in your skin into subtle notes of bergamot and shea butter. It helps repair and restore your skin’s natural protective barrier without leaving a greasy feeling.",
         "mobile_text_scale": 4,
@@ -272,7 +405,15 @@
           }
         }
       },
-      "block_order": ["highlight-0", "highlight-1", "highlight-2", "highlight-3", "highlight-4", "highlight-5", "shape-divider-image-with-highlights-0"],
+      "block_order": [
+        "highlight-0",
+        "highlight-1",
+        "highlight-2",
+        "highlight-3",
+        "highlight-4",
+        "highlight-5",
+        "shape-divider-image-with-highlights-0"
+      ],
       "settings": {
         "title": "What's inside?",
         "block_alignment_on_desktop": "justify-center",
@@ -294,15 +435,27 @@
       "blocks": {
         "testimonial-0": {
           "type": "testimonial",
-          "settings": { "rating": "5_stars", "quote": "Smells amazing. Skin feels soft, moisturized.", "source": "libby" }
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Smells amazing. Skin feels soft, moisturized.",
+            "source": "libby"
+          }
         },
         "testimonial-1": {
           "type": "testimonial",
-          "settings": { "rating": "5_stars", "quote": "After two weeks of reliciously using it, my skin is more supple than it was before.", "source": "Jane" }
+          "settings": {
+            "rating": "5_stars",
+            "quote": "After two weeks of reliciously using it, my skin is more supple than it was before.",
+            "source": "Jane"
+          }
         },
         "testimonial-2": {
           "type": "testimonial",
-          "settings": { "rating": "5_stars", "quote": "I love it! I always wake up with hydrated and soft skin the next day.", "source": "Charlie" }
+          "settings": {
+            "rating": "5_stars",
+            "quote": "I love it! I always wake up with hydrated and soft skin the next day.",
+            "source": "Charlie"
+          }
         },
         "shape-divider-featured-testimonials-0": {
           "type": "shape_divider",
@@ -316,7 +469,12 @@
           }
         }
       },
-      "block_order": ["testimonial-0", "testimonial-1", "testimonial-2", "shape-divider-featured-testimonials-0"],
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1",
+        "testimonial-2",
+        "shape-divider-featured-testimonials-0"
+      ],
       "settings": {
         "display_on_card": false,
         "title": "",
@@ -340,7 +498,7 @@
           "settings": {
             "icon": "none",
             "title": "What skin types are Aura products suitable for?",
-            "answer": "<p>Our products are designed to be gentle and effective for all skin types, including sensitive, dry, oily, and combination skin. Each formula is crafted with plant-based ingredients that work harmoniously with your skin’s natural balance.<\/p>"
+            "answer": "<p>Our products are designed to be gentle and effective for all skin types, including sensitive, dry, oily, and combination skin. Each formula is crafted with plant-based ingredients that work harmoniously with your skin’s natural balance.</p>"
           }
         },
         "question_2": {
@@ -348,7 +506,7 @@
           "settings": {
             "icon": "none",
             "title": "Are Aura products cruelty-free?",
-            "answer": "<p>Yes, absolutely. We are proudly cruelty-free and do not test our products on animals at any stage of development. We believe in ethical beauty and only partner with suppliers who share our values.<\/p>"
+            "answer": "<p>Yes, absolutely. We are proudly cruelty-free and do not test our products on animals at any stage of development. We believe in ethical beauty and only partner with suppliers who share our values.</p>"
           }
         },
         "question_3": {
@@ -356,7 +514,7 @@
           "settings": {
             "icon": "none",
             "title": "Do you use synthetic fragrances in your products?",
-            "answer": "<p>No, we never use synthetic fragrances. Our products are naturally scented with essential oils and botanical extracts, ensuring a gentle and pleasant experience without the use of artificial chemicals.<\/p>"
+            "answer": "<p>No, we never use synthetic fragrances. Our products are naturally scented with essential oils and botanical extracts, ensuring a gentle and pleasant experience without the use of artificial chemicals.</p>"
           }
         },
         "question_4": {
@@ -364,7 +522,7 @@
           "settings": {
             "icon": "none",
             "title": "What ingredients do you avoid in your formulations?",
-            "answer": "<p>At Aura, we avoid harmful ingredients such as parabens, sulfates, phthalates, synthetic dyes, and artificial fragrances. We prioritize clean, plant-based ingredients that are both safe and effective.<\/p>"
+            "answer": "<p>At Aura, we avoid harmful ingredients such as parabens, sulfates, phthalates, synthetic dyes, and artificial fragrances. We prioritize clean, plant-based ingredients that are both safe and effective.</p>"
           }
         },
         "question_5": {
@@ -372,7 +530,7 @@
           "settings": {
             "icon": "none",
             "title": "How should I store my Aura skincare products?",
-            "answer": "<p>To maintain the freshness and efficacy of our products, we recommend storing them in a cool, dry place, away from direct sunlight. Our eco-friendly packaging helps protect the integrity of the ingredients.<\/p>"
+            "answer": "<p>To maintain the freshness and efficacy of our products, we recommend storing them in a cool, dry place, away from direct sunlight. Our eco-friendly packaging helps protect the integrity of the ingredients.</p>"
           }
         },
         "question_6": {
@@ -380,7 +538,7 @@
           "settings": {
             "icon": "none",
             "title": "What is your return policy?",
-            "answer": "<p>We want you to love your Aura experience. If you’re not completely satisfied with your purchase, we offer a 30-day return policy. Simply contact our customer service team, and they’ll guide you through the process.<\/p>"
+            "answer": "<p>We want you to love your Aura experience. If you’re not completely satisfied with your purchase, we offer a 30-day return policy. Simply contact our customer service team, and they’ll guide you through the process.</p>"
           }
         },
         "question_7": {
@@ -388,7 +546,7 @@
           "settings": {
             "icon": "none",
             "title": "How does Aura ensure sustainability in its packaging?",
-            "answer": "<p>We’re committed to sustainability in every aspect of our business. Our packaging is made from eco-friendly materials, including recycled and recyclable components, and we are always exploring new ways to reduce our environmental impact.<\/p>"
+            "answer": "<p>We’re committed to sustainability in every aspect of our business. Our packaging is made from eco-friendly materials, including recycled and recyclable components, and we are always exploring new ways to reduce our environmental impact.</p>"
           }
         },
         "question_8": {
@@ -396,17 +554,186 @@
           "settings": {
             "icon": "none",
             "title": "What are the shipping options and how long does delivery take?",
-            "answer": "<p>We offer standard and expedited shipping options. Standard shipping typically takes 3-5 business days within the continental US, while expedited options are available for faster delivery. All orders are shipped in eco-friendly packaging.<\/p>"
+            "answer": "<p>We offer standard and expedited shipping options. Standard shipping typically takes 3-5 business days within the continental US, while expedited options are available for faster delivery. All orders are shipped in eco-friendly packaging.</p>"
           }
         }
       },
-      "block_order": ["question_1", "question_2", "question_3", "question_4", "question_5", "question_6", "question_7", "question_8"],
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8"
+      ],
+      "disabled": true,
       "settings": {
         "display_on_card": true,
         "heading_text_style": "heading",
         "two_columns_desktop": true,
         "title": "FAQ",
         "richtext": "Find the most frequently asked questions below.",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "faq_VmifMc": {
+      "type": "faq",
+      "blocks": {
+        "question_DU3UWa": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Are your soaps veganand sulfate-free?",
+            "answer": "<p>Yes. Our labels state plant-based, sulfate-free, vegan, and palm‑oil‑free.</p>"
+          }
+        },
+        "question_xXfedH": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What can I use the liquid soap for?",
+            "answer": "<p>Body, hands, and home.</p>"
+          }
+        },
+        "question_aQ8JE6": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What can I use the bar soap for?",
+            "answer": "<p>Body, hands, and face.</p>"
+          }
+        },
+        "question_XgVGKY": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Is potassium hydroxide safe in soap?",
+            "answer": "<p>Potassium hydroxide is used to turn oils into soap and is not present as a harsh active<br/>in the finished product.</p>"
+          }
+        },
+        "question_pzFAix": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I use the liquid soap?",
+            "answer": "<p>Pump 1-2 times onto wet skin. Lather and rinse.</p>"
+          }
+        },
+        "question_JrgKzr": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I store bar soap to make it last?",
+            "answer": "<p>Keep the bar dry between uses (no standing water).</p>"
+          }
+        },
+        "question_RqMRTk": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What is the safety guidance for soaps?",
+            "answer": "<p>For external use only. Avoid contact with eyes. Keep out of reach of children. Discontinue use if irritation occurs.</p>"
+          }
+        },
+        "question_U6PEzr": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What does 'Free from' mean?",
+            "answer": "<p>No parabens, SLS/SLES, dyes/colorant, palm oil, or alcohols (see each product page).</p>"
+          }
+        },
+        "question_pXWGbL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I use essential oils in a diffuser?",
+            "answer": "<p>Add water to your diffuser, then add a few drops of essential oil. Start small and adjust.</p>"
+          }
+        },
+        "question_7CnpgW": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Can I ingest essential oils?",
+            "answer": "<p>No. Do not ingest essential oils.</p>"
+          }
+        },
+        "question_UAJ7Tn": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Can I apply essential oils directly to skin?",
+            "answer": "<p>Essential oils are concentrated. Dilute first and discontinue use if irritation occurs.</p>"
+          }
+        },
+        "question_iJDtrp": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Any note about turmeric soap?",
+            "answer": "<p>Turmeric may stain light fabrics. Rinse thoroughly after use.</p>"
+          }
+        },
+        "question_TpTKjL": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How do I contact you?",
+            "answer": "<p>Email: <a href=\"mailto:info@bisschemical.com\" title=\"mailto:info@bisschemical.com\">info@bisschemical.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_DU3UWa",
+        "question_xXfedH",
+        "question_aQ8JE6",
+        "question_XgVGKY",
+        "question_pzFAix",
+        "question_JrgKzr",
+        "question_RqMRTk",
+        "question_U6PEzr",
+        "question_pXWGbL",
+        "question_7CnpgW",
+        "question_UAJ7Tn",
+        "question_iJDtrp",
+        "question_TpTKjL"
+      ],
+      "name": "t:sections.faq.name",
+      "settings": {
+        "display_on_card": true,
+        "heading_text_style": "heading",
+        "two_columns_desktop": true,
+        "title": "FAQ",
+        "richtext": "Find the most frequently asked questions below.",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "17696879010161131f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_dBQtgm": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_dBQtgm"
+      ],
+      "settings": {
+        "apply_vertical_spacing": true,
+        "apply_horizontal_spacing": true,
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-full",
         "color_scheme": "",
         "use_gradient_background": false
       }
@@ -425,5 +752,15 @@
       }
     }
   },
-  "order": ["breadcrumbs", "main", "feature-text", "image-with-highlights", "featured-testimonials", "faq", "related-products"]
+  "order": [
+    "breadcrumbs",
+    "main",
+    "feature-text",
+    "image-with-highlights",
+    "featured-testimonials",
+    "faq",
+    "faq_VmifMc",
+    "17696879010161131f",
+    "related-products"
+  ]
 }

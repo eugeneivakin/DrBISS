@@ -96,12 +96,14 @@
         },
         "spacer": {
           "type": "spacer",
+          "disabled": true,
           "settings": {
             "height": 5
           }
         },
         "icon-row": {
           "type": "icon_row",
+          "disabled": true,
           "settings": {
             "display_on_card": true,
             "uppercase_text": false,
@@ -124,6 +126,7 @@
         },
         "features-list": {
           "type": "features_list",
+          "disabled": true,
           "settings": {
             "display_on_card": true,
             "uppercase_text": false,
@@ -139,6 +142,7 @@
         },
         "tabs": {
           "type": "tabs",
+          "disabled": true,
           "settings": {
             "display_on_card": false,
             "uppercase_heading": false,
@@ -315,6 +319,7 @@
         }
       },
       "block_order": ["highlight-0", "highlight-1", "highlight-2", "highlight-3", "highlight-4", "highlight-5", "shape-divider-image-with-highlights-0"],
+      "disabled": true,
       "settings": {
         "title": "What's inside?",
         "block_alignment_on_desktop": "justify-center",
@@ -371,6 +376,7 @@
         }
       },
       "block_order": ["testimonial-0", "testimonial-1", "testimonial-2", "shape-divider-featured-testimonials-0"],
+      "disabled": true,
       "settings": {
         "display_on_card": false,
         "title": "",
@@ -600,6 +606,29 @@
         "use_gradient_background": false
       }
     },
+    "17696879010161131f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_dBQtgm": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": ["judge_me_reviews_review_widget_dBQtgm"],
+      "settings": {
+        "apply_vertical_spacing": true,
+        "apply_horizontal_spacing": true,
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-full",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -614,5 +643,15 @@
       }
     }
   },
-  "order": ["breadcrumbs", "main", "feature-text", "image-with-highlights", "featured-testimonials", "faq", "faq_VmifMc", "related-products"]
+  "order": [
+    "breadcrumbs",
+    "main",
+    "feature-text",
+    "image-with-highlights",
+    "featured-testimonials",
+    "faq",
+    "faq_VmifMc",
+    "17696879010161131f",
+    "related-products"
+  ]
 }
