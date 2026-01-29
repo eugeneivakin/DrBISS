@@ -167,7 +167,7 @@
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs well with",
-            "product_list_limit": 10,
+            "product_list_limit": 4,
             "product_tile_style": "mini",
             "enable_quick_buy": true
           }
@@ -220,6 +220,7 @@
         },
         "tabs": {
           "type": "tabs",
+          "disabled": true,
           "settings": {
             "display_on_card": false,
             "uppercase_heading": false,
@@ -475,6 +476,7 @@
         "testimonial-2",
         "shape-divider-featured-testimonials-0"
       ],
+      "disabled": true,
       "settings": {
         "display_on_card": false,
         "title": "",
@@ -741,11 +743,11 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "display_on_card": false,
+        "display_on_card": true,
         "enable_quick_buy": false,
         "related_products_heading": "You may also like",
-        "max_products": "3",
-        "product_tiles_aspect_ratio": "natural",
+        "max_products": "6",
+        "product_tiles_aspect_ratio": "aspect-w-1 aspect-h-1",
         "image_shape": "default",
         "color_scheme": "scheme1",
         "use_gradient_background": false
