@@ -738,7 +738,7 @@
                           </ul>
                         </div>
                       {% else %}
-                        {% capture section_url %}{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary{% endcapture %}
+                        {% capture section_url %}{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}{% endcapture %}
                         <data-island
                           class="related-products"
                           x-data
