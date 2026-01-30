@@ -1,6 +1,430 @@
+{% doc %}
+  @prompt
+    секція картинка зліва і текст з правої сторони 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-text-block-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-image-text-container-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.gap }}px;
+    align-items: {{ block.settings.vertical_alignment }};
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.image_width }}%;
+    max-width: {{ block.settings.image_width }}%;
+  }
+
+  .ai-image-text-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .ai-image-text-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-image-text-content-{{ ai_gen_id }} {
+    flex: 1;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-image-text-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0 0 {{ block.settings.heading_spacing }}px 0;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-image-text-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.6;
+    margin: 0 0 {{ block.settings.text_spacing }}px 0;
+  }
+
+  .ai-image-text-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-image-text-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background_color }};
+    color: {{ block.settings.button_hover_text_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-text-container-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .ai-image-text-block-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<ai-image-text-{{ ai_gen_id }} class="ai-image-text-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-text-container-{{ ai_gen_id }}">
+    <div class="ai-image-text-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-text-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-text-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-text-empty-state-{{ ai_gen_id }}">
+            Додайте зображення
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-text-content-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-image-text-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+
+      {% if block.settings.text != blank %}
+        <div class="ai-image-text-text-{{ ai_gen_id }}">{{ block.settings.text }}</div>
+      {% endif %}
+
+      {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+        <a href="{{ block.settings.button_link }}" class="ai-image-text-button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</ai-image-text-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiImageText{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('ai-image-text-{{ ai_gen_id }}', AiImageText{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Зображення та текст",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Зображення"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Зображення"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Ширина зображення",
+      "min": 30,
+      "max": 70,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Радіус рамки зображення",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Контент"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Заголовок",
+      "default": "Заголовок секції"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Текст",
+      "default": "<p>Додайте опис вашого продукту або послуги. Розкажіть про переваги та особливості.</p>"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Розмір заголовка",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Розмір тексту",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Відступ заголовка",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "label": "Відступ тексту",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Кнопка"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Текст кнопки",
+      "default": "Дізнатися більше"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Посилання кнопки"
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "label": "Розмір тексту кнопки",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "label": "Вертикальний відступ кнопки",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "label": "Горизонтальний відступ кнопки",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Радіус рамки кнопки",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Макет"
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Вертикальне вирівнювання",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Верх"
+        },
+        {
+          "value": "center",
+          "label": "Центр"
+        },
+        {
+          "value": "flex-end",
+          "label": "Низ"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Відстань між елементами",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Внутрішній відступ",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Радіус рамки блоку",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Ширина на десктопі",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Кольори"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Фон",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Колір заголовка",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Колір тексту",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Фон кнопки",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Текст кнопки",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Фон кнопки при наведенні",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Текст кнопки при наведенні",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Зображення та текст"
+    }
+  ]
+}
 {% endschema %}
