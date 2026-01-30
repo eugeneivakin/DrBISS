@@ -22,6 +22,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "inventory_status_AH7bdt": {
+          "type": "inventory_status",
+          "settings": {
+            "low_inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
         "tags": {
           "type": "tags",
           "settings": {
@@ -235,6 +242,7 @@
         }
       },
       "block_order": [
+        "inventory_status_AH7bdt",
         "tags",
         "title",
         "price",
