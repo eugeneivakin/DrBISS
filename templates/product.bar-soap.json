@@ -22,13 +22,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "inventory_status_LPRVdA": {
-          "type": "inventory_status",
-          "settings": {
-            "low_inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
         "tags": {
           "type": "tags",
           "settings": {
@@ -54,6 +47,13 @@
             "display_on_card": false,
             "show_on_sale_sticker": false,
             "text_align": "text-left"
+          }
+        },
+        "inventory_status_LPRVdA": {
+          "type": "inventory_status",
+          "settings": {
+            "low_inventory_threshold": 10,
+            "show_inventory_quantity": true
           }
         },
         "collapsible_tab_ywppTL": {
@@ -246,10 +246,10 @@
         }
       },
       "block_order": [
-        "inventory_status_LPRVdA",
         "tags",
         "title",
         "price",
+        "inventory_status_LPRVdA",
         "collapsible_tab_ywppTL",
         "collapsible_tab_zdqV9P",
         "collapsible_tab_43aR9B",

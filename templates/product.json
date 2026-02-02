@@ -49,6 +49,13 @@
             "text_align": "text-left"
           }
         },
+        "inventory_status_h7qqXQ": {
+          "type": "inventory_status",
+          "settings": {
+            "low_inventory_threshold": 5,
+            "show_inventory_quantity": false
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -164,6 +171,7 @@
         "tags",
         "title",
         "price",
+        "inventory_status_h7qqXQ",
         "description",
         "quantity-selector",
         "variant-picker",
@@ -222,7 +230,10 @@
           }
         }
       },
-      "block_order": ["shape-divider-feature-text-0", "shape-divider-feature-text-1"],
+      "block_order": [
+        "shape-divider-feature-text-0",
+        "shape-divider-feature-text-1"
+      ],
       "settings": {
         "rich_text": "This lightweight balm melts in your skin into subtle notes of bergamot and shea butter. It helps repair and restore your skin’s natural protective barrier without leaving a greasy feeling.",
         "mobile_text_scale": 4,
@@ -318,7 +329,15 @@
           }
         }
       },
-      "block_order": ["highlight-0", "highlight-1", "highlight-2", "highlight-3", "highlight-4", "highlight-5", "shape-divider-image-with-highlights-0"],
+      "block_order": [
+        "highlight-0",
+        "highlight-1",
+        "highlight-2",
+        "highlight-3",
+        "highlight-4",
+        "highlight-5",
+        "shape-divider-image-with-highlights-0"
+      ],
       "disabled": true,
       "settings": {
         "title": "What's inside?",
@@ -375,7 +394,12 @@
           }
         }
       },
-      "block_order": ["testimonial-0", "testimonial-1", "testimonial-2", "shape-divider-featured-testimonials-0"],
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1",
+        "testimonial-2",
+        "shape-divider-featured-testimonials-0"
+      ],
       "disabled": true,
       "settings": {
         "display_on_card": false,
@@ -460,7 +484,16 @@
           }
         }
       },
-      "block_order": ["question_1", "question_2", "question_3", "question_4", "question_5", "question_6", "question_7", "question_8"],
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8"
+      ],
       "disabled": true,
       "settings": {
         "display_on_card": true,
@@ -619,7 +652,9 @@
           }
         }
       },
-      "block_order": ["judge_me_reviews_review_widget_dBQtgm"],
+      "block_order": [
+        "judge_me_reviews_review_widget_dBQtgm"
+      ],
       "settings": {
         "apply_vertical_spacing": true,
         "apply_horizontal_spacing": true,
