@@ -25,7 +25,9 @@
           }
         }
       },
-      "block_order": ["slide_CBjAAz"],
+      "block_order": [
+        "slide_CBjAAz"
+      ],
       "name": "t:sections.hero_slideshow.name",
       "settings": {
         "style": "full",
@@ -89,7 +91,14 @@
           }
         }
       },
-      "block_order": ["icon-0", "icon-1", "icon-2", "icon-3", "icon-4", "icon-5"],
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "icon-2",
+        "icon-3",
+        "icon-4",
+        "icon-5"
+      ],
       "settings": {
         "title": "",
         "max_width": 80,
@@ -102,6 +111,71 @@
         "show_border": true,
         "color_scheme": "scheme1",
         "use_gradient_background": false
+      }
+    },
+    "featured_collection_xHCFDW": {
+      "type": "featured-collection",
+      "blocks": {
+        "tab_BUEtHP": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tab",
+            "collection": "bar-soaps",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
+        },
+        "tab_xcRCia": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tab",
+            "collection": "essential-oils",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
+        }
+      },
+      "block_order": [
+        "tab_BUEtHP",
+        "tab_xcRCia"
+      ],
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "Featured collection",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
       }
     },
     "featured_collection_q4iPrT": {
@@ -285,7 +359,12 @@
           }
         }
       },
-      "block_order": ["testimonial_n6teFE", "testimonial_CAUQrK", "testimonial_CC7EQG", "testimonial_YbNTc8"],
+      "block_order": [
+        "testimonial_n6teFE",
+        "testimonial_CAUQrK",
+        "testimonial_CC7EQG",
+        "testimonial_YbNTc8"
+      ],
       "name": "t:sections.testimonials.name",
       "settings": {
         "display_on_card": true,
@@ -328,7 +407,10 @@
           }
         }
       },
-      "block_order": ["shape-divider-newsletter-0", "shape-divider-newsletter-1"],
+      "block_order": [
+        "shape-divider-newsletter-0",
+        "shape-divider-newsletter-1"
+      ],
       "settings": {
         "title": "Sign up to our newsletter",
         "richtext": "<p>Receive special offers and first look at new products.</p>",
@@ -341,6 +423,7 @@
   "order": [
     "hero_slideshow_n4GQYX",
     "icon-list",
+    "featured_collection_xHCFDW",
     "featured_collection_q4iPrT",
     "featured_collection_e9KEMA",
     "featured_collection_frwb7T",
