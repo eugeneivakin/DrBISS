@@ -132,7 +132,7 @@
           href="{{ product.url | within: collection }}"
           class="block h-full w-full"
         >
-          <h3 class="font-body text-base">{{ product.title | escape }}</h3>
+          <h2 class="font-body text-base">{{ product.title | escape }}</h2>
           {%- if settings.product_tiles_show_vendor -%}
             <p class="mt-1">{{ product.vendor }}</p>
           {%- endif -%}
