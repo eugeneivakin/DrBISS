@@ -164,12 +164,12 @@
         "tab_Ne6dMY": {
           "type": "tab",
           "settings": {
-            "tab_name": "Tab",
+            "tab_name": "{{ block.settings.collection.title }}",
             "collection": "diffusers",
             "tab_layout": "grid",
             "tab_products_per_row_desktop": 4,
             "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
+            "tab_image_shape": "default",
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
@@ -179,12 +179,12 @@
         "tab_wE6tMi": {
           "type": "tab",
           "settings": {
-            "tab_name": "Tab",
+            "tab_name": "{{ block.settings.collection.title }}",
             "collection": "bundles-gift-sets",
             "tab_layout": "grid",
             "tab_products_per_row_desktop": 4,
             "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
+            "tab_image_shape": "default",
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
