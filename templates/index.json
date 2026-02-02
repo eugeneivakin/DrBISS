@@ -119,12 +119,12 @@
         "tab_pPNpip": {
           "type": "tab",
           "settings": {
-            "tab_name": "Tab",
+            "tab_name": "{{ block.settings.collection.title }}",
             "collection": "liquid-soaps",
             "tab_layout": "grid",
             "tab_products_per_row_desktop": 4,
             "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
+            "tab_image_shape": "default",
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
@@ -134,12 +134,12 @@
         "tab_BUEtHP": {
           "type": "tab",
           "settings": {
-            "tab_name": "Tab",
+            "tab_name": "{{ block.settings.collection.title }}",
             "collection": "bar-soaps",
             "tab_layout": "grid",
             "tab_products_per_row_desktop": 4,
             "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
+            "tab_image_shape": "default",
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
@@ -149,12 +149,12 @@
         "tab_xcRCia": {
           "type": "tab",
           "settings": {
-            "tab_name": "Tab",
+            "tab_name": "{{ block.settings.collection.title }}",
             "collection": "essential-oils",
             "tab_layout": "grid",
             "tab_products_per_row_desktop": 4,
             "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
+            "tab_image_shape": "default",
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
@@ -208,7 +208,7 @@
         "show_view_all": false,
         "enable_quick_buy": false,
         "display_on_card": false,
-        "layout": "grid",
+        "layout": "tabs",
         "products_per_row_mobile": "1",
         "products_per_row_desktop": 4,
         "slideshow_focus": "center",
