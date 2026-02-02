@@ -116,6 +116,21 @@
     "featured_collection_xHCFDW": {
       "type": "featured-collection",
       "blocks": {
+        "tab_pPNpip": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tab",
+            "collection": "liquid-soaps",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
+        },
         "tab_BUEtHP": {
           "type": "tab",
           "settings": {
@@ -145,11 +160,44 @@
             "tab_desktop_slide_width": 40,
             "tab_autoscroll_mode": "1"
           }
+        },
+        "tab_Ne6dMY": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tab",
+            "collection": "diffusers",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
+        },
+        "tab_wE6tMi": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "Tab",
+            "collection": "bundles-gift-sets",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
         }
       },
       "block_order": [
+        "tab_pPNpip",
         "tab_BUEtHP",
-        "tab_xcRCia"
+        "tab_xcRCia",
+        "tab_Ne6dMY",
+        "tab_wE6tMi"
       ],
       "name": "t:sections.featured_collection.name",
       "settings": {
