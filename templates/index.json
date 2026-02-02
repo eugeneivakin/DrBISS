@@ -201,9 +201,9 @@
       ],
       "name": "t:sections.featured_collection.name",
       "settings": {
-        "title": "Featured collection",
-        "subheading": "Use this text to share information about your collection.",
-        "collection": "",
+        "title": "Bundles",
+        "subheading": "",
+        "collection": "bar-soaps",
         "no_products": 4,
         "show_view_all": false,
         "enable_quick_buy": false,
