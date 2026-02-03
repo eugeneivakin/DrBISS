@@ -32,12 +32,17 @@
         },
         "newsletter-0": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "newsletter_heading": "Sign up to our newsletter"
           }
         }
       },
-      "block_order": ["tagline-and-social-links-0", "menus-0", "newsletter-0"],
+      "block_order": [
+        "tagline-and-social-links-0",
+        "menus-0",
+        "newsletter-0"
+      ],
       "settings": {
         "show_payment_icons": false,
         "show_country_selector": true,
@@ -63,5 +68,8 @@
       }
     }
   },
-  "order": ["footer", "hero-logo"]
+  "order": [
+    "footer",
+    "hero-logo"
+  ]
 }

@@ -103,8 +103,7 @@
       class="product-tile__container {% if display_on_card %}bg-scheme-card card__surface {% if products_per_row_mobile == '2' %}p-2.5 lg:p-5{% else %}p-5{% endif %} h-full{% endif %}"
     >
       {%- if product.featured_media -%}
-        <a
-          href="{{ product.url | within: collection }}"
+        <div
           class="product-tile__featured-media group block"
         >
           <div class="product-media-object relative {% unless display_on_card %}{% if settings.media_shadow_direction contains 'top' %}pt-media-shadow{% else %}pb-media-shadow{% endif %}{% endunless %}">
@@ -125,73 +124,73 @@
               will_transform: will_transform
             -%}
           </div>
-        </a>
+        </div>
       {%- endif -%}
       <div class="product-tile mt-5 break-words {{ settings.product_tile_text_align }}">
-        <a
-          href="{{ product.url | within: collection }}"
-          class="block h-full w-full"
-        >
-          <h2 class="font-body text-base">{{ product.title | escape }}</h2>
-          {%- if settings.product_tiles_show_vendor -%}
-            <p class="mt-1">{{ product.vendor }}</p>
-          {%- endif -%}
+        <h2 class="font-body text-base">
+          <a
+            href="{{ product.url | within: collection }}"
+            class="block h-full w-full product-tile__link"
+          >
+            {{- product.title | escape -}}
+          </a>
+        </h2>
+        {%- if settings.product_tiles_show_vendor -%}
+          <p class="mt-1">{{ product.vendor }}</p>
+        {%- endif -%}
 
-          {%- liquid
-            assign metafield_namespace = settings.product_tiles_metafield_content | split: '.' | first
-            assign metafield_key = settings.product_tiles_metafield_content | split: '.' | last
-            assign metafield = product.metafields[metafield_namespace][metafield_key]
-          -%}
-          {% if metafield != blank %}
-            <div class="rte mt-2.5 normal-case text-scheme-text">
-              {{ metafield | metafield_tag }}
-            </div>
-          {% endif %}
+        {%- liquid
+          assign metafield_namespace = settings.product_tiles_metafield_content | split: '.' | first
+          assign metafield_key = settings.product_tiles_metafield_content | split: '.' | last
+          assign metafield = product.metafields[metafield_namespace][metafield_key]
+        -%}
+        {% if metafield != blank %}
+          <div class="rte mt-2.5 normal-case text-scheme-text">
+            {{ metafield | metafield_tag }}
+          </div>
+        {% endif %}
 
-          {%- if enable_quick_buy -%}
-            <span
-              class="mt-2.5 inline-block"
-              x-html="formatMoney(currentPrice)"
-              :class="
-                {
-                  'invisible': !currentVariant
-                }
-              "
-              data-product-price
-            >
-              {{ current_variant.price | money }}
-            </span>
-            {% if product.compare_at_price_max > product.price %}
-              <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
-                <span class="{{ price_text_size }}">
-                  <span class="sr-only">
-                    {{- 'products.general.sale_price' | t -}}
-                  </span>
-                  <s
-                    data-compare-price
-                    class="text-scheme-text"
-                    x-html="formatMoney(currentVariant.compare_at_price)"
-                  >
-                    {% if current_variant.compare_at_price
-                        > current_variant.price
-                    %}
-                      {{ current_variant.compare_at_price | money }}
-                    {% endif %}
-                  </s>
+        {%- if enable_quick_buy -%}
+          <span
+            class="mt-2.5 inline-block"
+            x-html="formatMoney(currentPrice)"
+            :class="
+              {
+                'invisible': !currentVariant
+              }
+            "
+            data-product-price
+          >
+            {{ current_variant.price | money }}
+          </span>
+          {% if product.compare_at_price_max > product.price %}
+            <span x-show="currentVariant && product.compare_at_price_max && currentVariant.compare_at_price > currentVariant.price">
+              <span class="{{ price_text_size }}">
+                <span class="sr-only">
+                  {{- 'products.general.sale_price' | t -}}
                 </span>
+                <s
+                  data-compare-price
+                  class="text-scheme-text"
+                  x-html="formatMoney(currentVariant.compare_at_price)"
+                >
+                  {% if current_variant.compare_at_price > current_variant.price %}
+                    {{ current_variant.compare_at_price | money }}
+                  {% endif %}
+                </s>
               </span>
-            {% endif %}
-          {%- else -%}
-            {%- render 'price',
-              product: product,
-              price_class: 'mt-2.5',
-              compare_at_price: compare_at_price,
-              price: price,
-              money_price: money_price,
-              on_sale: on_sale
-            -%}
-          {%- endif -%}
-        </a>
+            </span>
+          {% endif %}
+        {%- else -%}
+          {%- render 'price',
+            product: product,
+            price_class: 'mt-2.5',
+            compare_at_price: compare_at_price,
+            price: price,
+            money_price: money_price,
+            on_sale: on_sale
+          -%}
+        {%- endif -%}
       </div>
       {%- if enable_quick_buy -%}
         <div class="product-tile__quick-buy">

@@ -16,7 +16,7 @@
   else
     assign image_shape = settings.product_tile_media_shape
   endif
-  
+
   assign layout = section.settings.layout
   assign tab_blocks = section.blocks | where: 'type', 'tab'
 -%}
@@ -42,99 +42,97 @@
 
     {%- if layout == 'tabs' -%}
       {%- if tab_blocks.size > 0 -%}
-      <div class="mt-5 lg:mt-10">
-        <div
-          class="flex flex-wrap justify-center gap-4 text-center"
-          role="tablist"
-          aria-label="{{ section.settings.title | default: 'Collection tabs' }}"
-        >
+        <div class="mt-5 lg:mt-10">
+          <div
+            class="flex flex-wrap justify-center gap-4 text-center"
+            role="tablist"
+            aria-label="{{ section.settings.title | default: 'Collection tabs' }}"
+          >
+            {%- for block in tab_blocks -%}
+              {%- if block.settings.collection != blank -%}
+                <button
+                  @click="activeTab = '{{ block.id }}'; $nextTick(() => refreshClipPaths(document.querySelector('#tabpanel-{{ block.id }}')))"
+                  :class="{ 'bg-scheme-text text-scheme-text-contrast': activeTab === '{{ block.id }}' }"
+                  class="tabs__control btn relative bg-scheme-secondary-background text-sm text-scheme-text lg:text-base"
+                  type="button"
+                  role="tab"
+                  :aria-selected="activeTab === '{{ block.id }}' ? 'true' : 'false'"
+                  aria-controls="tabpanel-{{ block.id }}"
+                  id="tab-{{ block.id }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.tab_name != blank -%}
+                    {{ block.settings.tab_name }}
+                  {%- elsif block.settings.collection != blank -%}
+                    {{ block.settings.collection.title }}
+                  {%- else -%}
+                    Tab {{ forloop.index }}
+                  {%- endif -%}
+                </button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+
+        <div class="mt-5 lg:mt-10">
           {%- for block in tab_blocks -%}
-            {%- if block.settings.collection != blank -%}
-              <button
-                @click="activeTab = '{{ block.id }}'"
-                :class="{ 'bg-scheme-text text-scheme-text-contrast': activeTab === '{{ block.id }}' }"
-                class="btn relative bg-scheme-secondary-background text-sm text-scheme-text lg:text-base"
-                type="button"
-                role="tab"
-                :aria-selected="activeTab === '{{ block.id }}' ? 'true' : 'false'"
-                aria-controls="tabpanel-{{ block.id }}"
-                id="tab-{{ block.id }}"
-                {{ block.shopify_attributes }}
+            {%- assign tab_collection = block.settings.collection -%}
+            {%- if tab_collection != blank -%}
+              {%- liquid
+                assign tab_layout = block.settings.tab_layout | default: 'grid'
+                assign tab_products_per_row_desktop = block.settings.tab_products_per_row_desktop | default: section.settings.products_per_row_desktop
+
+                if block.settings.tab_image_shape != blank
+                  assign tab_image_shape = block.settings.tab_image_shape
+                elsif section.settings.image_shape != ''
+                  assign tab_image_shape = section.settings.image_shape
+                else
+                  assign tab_image_shape = settings.product_tile_media_shape
+                endif
+
+                assign tab_product_tiles_aspect_ratio = block.settings.tab_product_tiles_aspect_ratio | default: section.settings.product_tiles_aspect_ratio
+
+                assign tab_slideshow_focus = block.settings.tab_slideshow_focus | default: section.settings.slideshow_focus
+                assign tab_mobile_slide_width = block.settings.tab_mobile_slide_width | default: section.settings.mobile_slide_width
+                assign tab_desktop_slide_width = block.settings.tab_desktop_slide_width | default: section.settings.desktop_slide_width
+                assign tab_autoscroll_mode = block.settings.tab_autoscroll_mode | default: section.settings.autoscroll_mode
+              -%}
+              <div
+                id="tabpanel-{{ block.id }}"
+                role="tabpanel"
+                aria-labelledby="tab-{{ block.id }}"
+                class="tabs__panel {% unless tab_layout == 'carousel' %}px-section w-full max-w-site mx-auto{% endunless %} {% unless forloop.first %}absolute -left-[9999px] top-0 w-full opacity-0 pointer-events-none{% endunless %}"
+                :class="{
+                  'absolute -left-[9999px] top-0 w-full opacity-0 pointer-events-none': activeTab !== '{{ block.id }}',
+                  'relative left-0 opacity-100 pointer-events-auto': activeTab === '{{ block.id }}'
+                }"
+                :aria-hidden="activeTab !== '{{ block.id }}' ? 'true' : 'false'"
+                :tabindex="activeTab === '{{ block.id }}' ? 0 : -1"
               >
-                {%- if block.settings.tab_name != blank -%}
-                  {{ block.settings.tab_name }}
-                {%- elsif block.settings.collection != blank -%}
-                  {{ block.settings.collection.title }}
-                {%- else -%}
-                  Tab {{ forloop.index }}
-                {%- endif -%}
-              </button>
+                {%- render 'featured-collection',
+                  item: section,
+                  collection: tab_collection,
+                  image_shape: tab_image_shape,
+                  tab_layout: tab_layout,
+                  tab_id: block.id,
+                  tab_products_per_row_desktop: tab_products_per_row_desktop,
+                  tab_product_tiles_aspect_ratio: tab_product_tiles_aspect_ratio,
+                  tab_slideshow_focus: tab_slideshow_focus,
+                  tab_mobile_slide_width: tab_mobile_slide_width,
+                  tab_desktop_slide_width: tab_desktop_slide_width,
+                  tab_autoscroll_mode: tab_autoscroll_mode
+                -%}
+              </div>
             {%- endif -%}
           {%- endfor -%}
         </div>
-      </div>
-
-      <div class="mt-5 lg:mt-10">
-        {%- for block in tab_blocks -%}
-          {%- assign tab_collection = block.settings.collection -%}
-          {%- if tab_collection != blank -%}
-            {%- liquid
-              assign tab_layout = block.settings.tab_layout | default: 'grid'
-              assign tab_products_per_row_desktop = block.settings.tab_products_per_row_desktop | default: section.settings.products_per_row_desktop
-              
-              if block.settings.tab_image_shape != blank
-                assign tab_image_shape = block.settings.tab_image_shape
-              elsif section.settings.image_shape != ''
-                assign tab_image_shape = section.settings.image_shape
-              else
-                assign tab_image_shape = settings.product_tile_media_shape
-              endif
-              
-              assign tab_product_tiles_aspect_ratio = block.settings.tab_product_tiles_aspect_ratio | default: section.settings.product_tiles_aspect_ratio
-              
-              assign tab_slideshow_focus = block.settings.tab_slideshow_focus | default: section.settings.slideshow_focus
-              assign tab_mobile_slide_width = block.settings.tab_mobile_slide_width | default: section.settings.mobile_slide_width
-              assign tab_desktop_slide_width = block.settings.tab_desktop_slide_width | default: section.settings.desktop_slide_width
-              assign tab_autoscroll_mode = block.settings.tab_autoscroll_mode | default: section.settings.autoscroll_mode
-            -%}
-            <div
-              x-show="activeTab === '{{ block.id }}'"
-              id="tabpanel-{{ block.id }}"
-              role="tabpanel"
-              aria-labelledby="tab-{{ block.id }}"
-              class="{% unless tab_layout == 'carousel' %}px-section w-full max-w-site mx-auto{% endunless %}"
-              {% unless forloop.first %}
-                style="display: none;"
-              {% endunless %}
-            >
-              {%- render 'featured-collection',
-                item: section,
-                collection: tab_collection,
-                image_shape: tab_image_shape,
-                tab_layout: tab_layout,
-                tab_id: block.id,
-                tab_products_per_row_desktop: tab_products_per_row_desktop,
-                tab_product_tiles_aspect_ratio: tab_product_tiles_aspect_ratio,
-                tab_slideshow_focus: tab_slideshow_focus,
-                tab_mobile_slide_width: tab_mobile_slide_width,
-                tab_desktop_slide_width: tab_desktop_slide_width,
-                tab_autoscroll_mode: tab_autoscroll_mode
-              -%}
-            </div>
-          {%- endif -%}
-        {%- endfor -%}
-      </div>
       {%- else -%}
         <div class="mt-5 text-center">
           <p class="text-scheme-text">Add tab blocks to display collections in tabs.</p>
         </div>
       {%- endif -%}
     {%- else -%}
-      {%- render 'featured-collection',
-        item: section,
-        collection: collection,
-        image_shape: image_shape
-      -%}
+      {%- render 'featured-collection', item: section, collection: collection, image_shape: image_shape -%}
     {%- endif -%}
 
     {%- if section.settings.button_text != '' and section.settings.button_link != blank -%}
@@ -151,7 +149,12 @@
       -%}
       <div class="mt-5 lg:mt-10 {{ button_alignment }}">
         <a href="{{ section.settings.button_link }}" class="push-btn inline-block">
-          <span class="push-btn__surface" style="{% if section.settings.button_color != blank %}background-color: {{ section.settings.button_color }};{% endif %}{% if section.settings.button_text_color != blank %} color: {{ section.settings.button_text_color }};{% endif %}">{{ section.settings.button_text }}</span>
+          <span
+            class="push-btn__surface"
+            style="{% if section.settings.button_color != blank %}background-color: {{ section.settings.button_color }};{% endif %}{% if section.settings.button_text_color != blank %} color: {{ section.settings.button_text_color }};{% endif %}"
+          >
+            {{- section.settings.button_text -}}
+          </span>
         </a>
       </div>
     {%- endif -%}
@@ -179,6 +182,25 @@
     render 'block-shape-divider', block: shape_divider
   endfor
 -%}
+
+<script>
+  function refreshClipPaths(root = document) {
+    root.querySelectorAll('[style*="clip-path: url(#clip-"]').forEach((el) => {
+      const current = getComputedStyle(el).clipPath;
+      el.style.clipPath = 'none';
+      //force reflow
+      void el.offsetWidth;
+      el.style.clipPath = current;
+    });
+  }
+
+  //Example: call when a tab is opened (depending on your tab code)
+  document.querySelectorAll('.tabs__control').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      setTimeout(() => refreshClipPaths(document.querySelector('.tabs__panel.is-active')), 50);
+    });
+  });
+</script>
 
 {% schema %}
 {
@@ -2835,11 +2857,7 @@
     }
   ],
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "aside"
-    ]
+    "groups": ["header", "footer", "aside"]
   }
 }
 {% endschema %}
