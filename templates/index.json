@@ -418,6 +418,7 @@
         "testimonial_CC7EQG",
         "testimonial_YbNTc8"
       ],
+      "disabled": true,
       "name": "t:sections.testimonials.name",
       "settings": {
         "display_on_card": true,

@@ -37,7 +37,7 @@
         "display_on_card": false,
         "enable_quick_buy": true,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
+        "products_per_row_desktop": 4,
         "enable_filtering": true,
         "enable_sorting": true,
         "expand_filters": true,
@@ -48,5 +48,9 @@
       }
     }
   },
-  "order": ["breadcrumbs", "banner", "product-grid"]
+  "order": [
+    "breadcrumbs",
+    "banner",
+    "product-grid"
+  ]
 }
