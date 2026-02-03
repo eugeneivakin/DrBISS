@@ -228,6 +228,7 @@
     },
     "featured_collection_q4iPrT": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured_collection.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
@@ -257,6 +258,7 @@
     },
     "featured_collection_e9KEMA": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured_collection.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
@@ -286,6 +288,7 @@
     },
     "featured_collection_frwb7T": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured_collection.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
@@ -315,6 +318,7 @@
     },
     "featured_collection_pTbqFA": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured_collection.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
@@ -344,6 +348,7 @@
     },
     "featured_collection_gNN4TE": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured_collection.name",
       "settings": {
         "title": "{{ section.settings.collection.title }}",
