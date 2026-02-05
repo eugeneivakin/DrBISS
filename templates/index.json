@@ -142,6 +142,35 @@
         "button_position": "center"
       }
     },
+    "featured_collection_BLDjni": {
+      "type": "featured-collection",
+      "name": "t:sections.featured_collection.name",
+      "settings": {
+        "title": "Bestsellers",
+        "subheading": "",
+        "collection": "bestsellers",
+        "no_products": 4,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "",
+        "use_gradient_background": false,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "",
+        "button_text_color": "",
+        "button_position": "center"
+      }
+    },
     "featured_collection_xHCFDW": {
       "type": "featured-collection",
       "blocks": {
@@ -357,6 +386,7 @@
     "hero_slideshow_n4GQYX",
     "icon-list",
     "featured_collection_tFkmTr",
+    "featured_collection_BLDjni",
     "featured_collection_xHCFDW",
     "testimonials_VW9gz8",
     "newsletter"
