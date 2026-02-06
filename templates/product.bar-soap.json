@@ -72,7 +72,7 @@
           "settings": {
             "display_on_card": false,
             "icon": "none",
-            "heading": "Long description",
+            "heading": "Description",
             "uppercase_text": false,
             "content": "{{ product.description }}",
             "page": ""
