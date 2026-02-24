@@ -17,6 +17,10 @@
   --tw-scale-y: var(--hover-effect-zoom-media);
 }
 
-.push-btn__surface {
+.main-banner-section-home-page .push-btn__surface {
   padding: 1rem 2rem;
+}
+
+.product-media .feature-media-item .media {
+  max-height: calc(100vh - var(--section-vertical-spacing) - var(--header-group-height) - 52px);
 }

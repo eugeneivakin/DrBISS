@@ -419,6 +419,7 @@
         "highlight-5",
         "shape-divider-image-with-highlights-0"
       ],
+      "disabled": true,
       "settings": {
         "title": "What's inside?",
         "block_alignment_on_desktop": "justify-center",
@@ -480,6 +481,7 @@
         "testimonial-2",
         "shape-divider-featured-testimonials-0"
       ],
+      "disabled": true,
       "settings": {
         "display_on_card": false,
         "title": "",

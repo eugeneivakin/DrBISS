@@ -2,12 +2,12 @@
 
 @media (min-width: 990px) {
   [data-related-products-section] .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2,minmax(0,25%));
+    grid-template-columns: repeat(2, minmax(0, 25%));
   }
 }
 
 .product-tile__link:before {
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   position: absolute;
@@ -20,6 +20,10 @@
   --tw-scale-y: var(--hover-effect-zoom-media);
 }
 
-.push-btn__surface {
+.main-banner-section-home-page .push-btn__surface {
   padding: 1rem 2rem;
+}
+
+.product-media .feature-media-item .media {
+  max-height: calc(100vh - var(--section-vertical-spacing) - var(--header-group-height) - 52px);
 }
