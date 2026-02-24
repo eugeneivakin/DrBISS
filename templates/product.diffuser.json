@@ -274,7 +274,7 @@
         "media_mobile_width": "w-full",
         "thumbnails_position": "under",
         "thumbnail_crop": "aspect-w-1 aspect-h-1",
-        "thumbnail_shape": "blob",
+        "thumbnail_shape": "default",
         "thumbnail_size": "large",
         "show_thumbnails_on_mobile": false,
         "mobile_thumbnails_layout": "grid",

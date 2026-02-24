@@ -39,14 +39,18 @@
           {{ current_variant.compare_at_price | money }}
         {% endif %}
       </s>
+      {% liquid
+        assign discount = current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round: 2
+      %}
+      <span class="price-item price-item--discount">
+        {{ 'products.product.price.percent' | t: amount: discount }}
+      </span>
     </span>
   {% endif %}
 
   <div
     x-show="currentVariant && currentVariant.unit_price"
-    {% if product.selected_or_first_available_variant.unit_price_measurement
-        == null
-    %}
+    {% if product.selected_or_first_available_variant.unit_price_measurement == null %}
       style="display: none;"
     {% endif %}
   >
@@ -90,10 +94,7 @@
         assign id = 'on-sale-sticker-' | append: product.id
         assign shape = settings.on_sale_badge_shape
       -%}
-      {%- render 'static-sticker-defs',
-        shape: settings.on_sale_badge_shape,
-        id: id
-      -%}
+      {%- render 'static-sticker-defs', shape: settings.on_sale_badge_shape, id: id -%}
       {%- render 'static-sticker',
         static_id: id,
         shape: shape,
