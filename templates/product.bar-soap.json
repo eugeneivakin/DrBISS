@@ -278,7 +278,7 @@
         "media_mobile_width": "w-full",
         "thumbnails_position": "under",
         "thumbnail_crop": "aspect-w-1 aspect-h-1",
-        "thumbnail_shape": "blob",
+        "thumbnail_shape": "default",
         "thumbnail_size": "large",
         "show_thumbnails_on_mobile": false,
         "mobile_thumbnails_layout": "grid",
@@ -329,113 +329,6 @@
         "button_link": "",
         "button_label": "Shop Now",
         "color_scheme": "scheme4",
-        "use_gradient_background": false
-      }
-    },
-    "image-with-highlights": {
-      "type": "image-with-highlights",
-      "blocks": {
-        "highlight-0": {
-          "type": "highlight",
-          "settings": {
-            "title": "Nature's purest ingredients",
-            "text": "Aura uses sustainably sourced botanicals to create balms and serums that nurture your skin while being kind to the planet.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "highlight-1": {
-          "type": "highlight",
-          "settings": {
-            "title": "Eco-conscious packaging",
-            "text": "Aura’s packaging is fully recyclable and made from eco-friendly materials, minimizing waste and reducing your carbon footprint.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "highlight-2": {
-          "type": "highlight",
-          "settings": {
-            "title": "Cruelty-free and vegan",
-            "text": "All Aura products are cruelty-free and vegan, ensuring no harm to animals in the creation of our skincare line.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "highlight-3": {
-          "type": "highlight",
-          "settings": {
-            "title": "Mindful formulations",
-            "text": "Each Aura product is carefully crafted to deliver effective results without harsh chemicals, prioritizing your skin’s health and well-being.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "highlight-4": {
-          "type": "highlight",
-          "settings": {
-            "title": "Feel-good rituals",
-            "text": "Aura products are designed to create a moment of self-care, helping you feel good both inside and out.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "highlight-5": {
-          "type": "highlight",
-          "settings": {
-            "title": "Sustainable sourcing",
-            "text": "We prioritize sustainability in our ingredient sourcing, working with suppliers who share our commitment to ethical and eco-friendly practices.",
-            "cta_link": "",
-            "cta_text": "",
-            "override_section_color_scheme": false,
-            "color_scheme": ""
-          }
-        },
-        "shape-divider-image-with-highlights-0": {
-          "type": "shape_divider",
-          "disabled": true,
-          "settings": {
-            "target_section": "below",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-3-patterned_1200x84",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        }
-      },
-      "block_order": [
-        "highlight-0",
-        "highlight-1",
-        "highlight-2",
-        "highlight-3",
-        "highlight-4",
-        "highlight-5",
-        "shape-divider-image-with-highlights-0"
-      ],
-      "settings": {
-        "title": "What's inside?",
-        "block_alignment_on_desktop": "justify-center",
-        "display_on_card": false,
-        "slideshow_on_mobile": true,
-        "slideshow_focus": "center",
-        "max_width": 320,
-        "crop": "",
-        "image_shape": "default",
-        "blob_type": 3,
-        "rotate_image": 0,
-        "disable_media_style": true,
-        "color_scheme": "scheme2",
         "use_gradient_background": false
       }
     },
@@ -766,7 +659,6 @@
     "breadcrumbs",
     "main",
     "feature-text",
-    "image-with-highlights",
     "featured-testimonials",
     "faq",
     "faq_VmifMc",

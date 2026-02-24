@@ -109,7 +109,7 @@
         "icon_thickness": 1.3,
         "background_color": "bg-scheme-card text-scheme-card-text",
         "show_border": true,
-        "color_scheme": "scheme1",
+        "color_scheme": "scheme2",
         "use_gradient_background": false
       }
     },
@@ -174,6 +174,21 @@
     "featured_collection_xHCFDW": {
       "type": "featured-collection",
       "blocks": {
+        "tab_wE6tMi": {
+          "type": "tab",
+          "settings": {
+            "tab_name": "{{ block.settings.collection.title }}",
+            "collection": "bundles-gift-sets",
+            "tab_layout": "grid",
+            "tab_products_per_row_desktop": 4,
+            "tab_product_tiles_aspect_ratio": "",
+            "tab_image_shape": "",
+            "tab_slideshow_focus": "center",
+            "tab_mobile_slide_width": "three_fifths",
+            "tab_desktop_slide_width": 40,
+            "tab_autoscroll_mode": "1"
+          }
+        },
         "tab_pPNpip": {
           "type": "tab",
           "settings": {
@@ -233,33 +248,18 @@
             "tab_desktop_slide_width": 40,
             "tab_autoscroll_mode": "1"
           }
-        },
-        "tab_wE6tMi": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "{{ block.settings.collection.title }}",
-            "collection": "bundles-gift-sets",
-            "tab_layout": "grid",
-            "tab_products_per_row_desktop": 4,
-            "tab_product_tiles_aspect_ratio": "",
-            "tab_image_shape": "",
-            "tab_slideshow_focus": "center",
-            "tab_mobile_slide_width": "three_fifths",
-            "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
-          }
         }
       },
       "block_order": [
+        "tab_wE6tMi",
         "tab_pPNpip",
         "tab_BUEtHP",
         "tab_xcRCia",
-        "tab_Ne6dMY",
-        "tab_wE6tMi"
+        "tab_Ne6dMY"
       ],
       "name": "t:sections.featured_collection.name",
       "settings": {
-        "title": "Bundles",
+        "title": "WHAT'S 🔥 AT Dr.BISS",
         "subheading": "",
         "collection": "bar-soaps",
         "no_products": 4,
@@ -282,6 +282,85 @@
         "button_color": "",
         "button_text_color": "",
         "button_position": "center"
+      }
+    },
+    "featured_testimonials_ymJpd6": {
+      "type": "featured-testimonials",
+      "blocks": {
+        "testimonial_bGnz4e": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Smells amazing. Skin feels soft, moisturized.",
+            "source": "libby"
+          }
+        },
+        "testimonial_ehBTQt": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "After two weeks of reliciously using it, my skin is more supple than it was before.",
+            "source": "Jane"
+          }
+        },
+        "testimonial_cVhKkx": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "I love it! I always wake up with hydrated and soft skin the next day.",
+            "source": "Charlie"
+          }
+        },
+        "testimonial_EEDY8i": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "These are perfect and a great upgrade to the line of products. I’ve been hoping that this change was coming and I wasn’t let down.",
+            "source": "Natalya"
+          }
+        },
+        "testimonial_3i99Qw": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "Nice soap and sweet scent. Definitely would recommend.",
+            "source": "Steve"
+          }
+        },
+        "shape_divider_VJjEem": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "above",
+            "target_section_color_scheme": "scheme1",
+            "style": "waves-2-patterned_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_bGnz4e",
+        "testimonial_ehBTQt",
+        "testimonial_cVhKkx",
+        "testimonial_EEDY8i",
+        "testimonial_3i99Qw",
+        "shape_divider_VJjEem"
+      ],
+      "name": "t:sections.feature_testimonials.name",
+      "settings": {
+        "display_on_card": false,
+        "title": "",
+        "font": "font-body",
+        "mobile_text_scale": 0,
+        "desktop_text_scale": 2,
+        "source_font": "font-heading heading-secondary",
+        "max_width": 100,
+        "disable_media_style": false,
+        "crop": "",
+        "image_shape": "default",
+        "color_scheme": "",
+        "use_gradient_background": false
       }
     },
     "testimonials_VW9gz8": {
@@ -388,6 +467,7 @@
     "featured_collection_tFkmTr",
     "featured_collection_BLDjni",
     "featured_collection_xHCFDW",
+    "featured_testimonials_ymJpd6",
     "testimonials_VW9gz8",
     "newsletter"
   ]

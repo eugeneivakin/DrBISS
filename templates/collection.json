@@ -25,7 +25,7 @@
         "display_on_card": false,
         "show_collection_title": true,
         "show_collection_description": true,
-        "linklist": "main-menu",
+        "linklist": "",
         "color_scheme": "scheme1",
         "use_gradient_background": false
       }

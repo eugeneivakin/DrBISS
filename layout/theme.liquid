@@ -71,6 +71,7 @@
     {{ content_for_header }}
 
     {{ 'base.bundle.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'base.bundle.custom.css' | asset_url | stylesheet_tag: preload: true }}
 
     {% render 'js-bridge' %}
 

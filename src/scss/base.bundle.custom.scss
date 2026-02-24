@@ -1,0 +1,29 @@
+@use "mixins/media" as *;
+
+@media (min-width: 990px) {
+  [data-related-products-section] .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 25%));
+  }
+}
+
+.product-tile__link:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.product-tile:hover .group .product-media-object img {
+  --tw-scale-x: var(--hover-effect-zoom-media);
+  --tw-scale-y: var(--hover-effect-zoom-media);
+}
+
+.main-banner-section-home-page .push-btn__surface {
+  padding: 1rem 2rem;
+}
+
+.product-media .feature-media-item .media {
+  max-height: calc(100vh - var(--section-vertical-spacing) - var(--header-group-height) - 52px);
+}
