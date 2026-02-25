@@ -56,9 +56,34 @@
             "show_inventory_quantity": true
           }
         },
+        "icon-row": {
+          "type": "icon_row",
+          "disabled": true,
+          "settings": {
+            "display_on_card": true,
+            "uppercase_text": false,
+            "icon_alignment": "justify-start",
+            "icon_thickness": 1.2,
+            "background_color": "bg-transparent text-scheme-text",
+            "show_border": true,
+            "icon_size": "h-10 w-10",
+            "icon_1": "cruelty_free",
+            "text_1": "Cruelty free",
+            "icon_2": "alcohol_free",
+            "text_2": "Alcohol free",
+            "icon_3": "paraben_free",
+            "text_3": "Paraben free",
+            "icon_4": "vegan",
+            "text_4": "Vegan",
+            "icon_5": "organic",
+            "text_5": "Organic"
+          }
+        },
         "collapsible_tab_ywppTL": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Overview",
@@ -70,6 +95,7 @@
         "collapsible_tab_zdqV9P": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": true,
             "display_on_card": false,
             "icon": "none",
             "heading": "Description",
@@ -81,6 +107,7 @@
         "collapsible_tab_43aR9B": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Why you'll love it",
@@ -92,6 +119,7 @@
         "collapsible_tab_3ceYfA": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Sustainability",
@@ -103,6 +131,7 @@
         "collapsible_tab_VBLH7z": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Product safety",
@@ -114,6 +143,7 @@
         "collapsible_tab_8jFdRx": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Ingredients",
@@ -125,6 +155,7 @@
         "collapsible_tab_BgEaPT": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Directions",
@@ -186,29 +217,6 @@
             "height": 5
           }
         },
-        "icon-row": {
-          "type": "icon_row",
-          "disabled": true,
-          "settings": {
-            "display_on_card": true,
-            "uppercase_text": false,
-            "icon_alignment": "justify-start",
-            "icon_thickness": 1.2,
-            "background_color": "bg-transparent text-scheme-text",
-            "show_border": true,
-            "icon_size": "h-10 w-10",
-            "icon_1": "cruelty_free",
-            "text_1": "Cruelty free",
-            "icon_2": "alcohol_free",
-            "text_2": "Alcohol free",
-            "icon_3": "paraben_free",
-            "text_3": "Paraben free",
-            "icon_4": "vegan",
-            "text_4": "Vegan",
-            "icon_5": "organic",
-            "text_5": "Organic"
-          }
-        },
         "features-list": {
           "type": "features_list",
           "disabled": true,
@@ -250,6 +258,7 @@
         "title",
         "price",
         "inventory_status_LPRVdA",
+        "icon-row",
         "collapsible_tab_ywppTL",
         "collapsible_tab_zdqV9P",
         "collapsible_tab_43aR9B",
@@ -263,7 +272,6 @@
         "buy-buttons",
         "complementary",
         "spacer",
-        "icon-row",
         "features-list",
         "tabs"
       ],
@@ -482,6 +490,31 @@
         "use_gradient_background": false
       }
     },
+    "17696879010161131f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_dBQtgm": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_dBQtgm"
+      ],
+      "settings": {
+        "apply_vertical_spacing": true,
+        "apply_horizontal_spacing": true,
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-full",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
     "faq_VmifMc": {
       "type": "faq",
       "blocks": {
@@ -616,31 +649,6 @@
         "use_gradient_background": false
       }
     },
-    "17696879010161131f": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_dBQtgm": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_dBQtgm"
-      ],
-      "settings": {
-        "apply_vertical_spacing": true,
-        "apply_horizontal_spacing": true,
-        "display_on_card": false,
-        "content_width_desktop": "lg:w-full",
-        "color_scheme": "",
-        "use_gradient_background": false
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -661,8 +669,8 @@
     "feature-text",
     "featured-testimonials",
     "faq",
-    "faq_VmifMc",
     "17696879010161131f",
+    "faq_VmifMc",
     "related-products"
   ]
 }

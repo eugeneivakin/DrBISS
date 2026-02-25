@@ -6,6 +6,9 @@
     class="appearance-none border-b-general border-scheme-text py-2.5"
     x-data="{ open: false }"
     @toggle="open = $root.open"
+    {% if block.settings.opened %}
+      open
+    {% endif %}
   >
     <summary>
       <div class=" flex items-center justify-between">

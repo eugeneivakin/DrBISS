@@ -56,9 +56,34 @@
             "show_inventory_quantity": true
           }
         },
+        "icon-row": {
+          "type": "icon_row",
+          "disabled": true,
+          "settings": {
+            "display_on_card": true,
+            "uppercase_text": false,
+            "icon_alignment": "justify-start",
+            "icon_thickness": 1.2,
+            "background_color": "bg-transparent text-scheme-text",
+            "show_border": true,
+            "icon_size": "h-10 w-10",
+            "icon_1": "cruelty_free",
+            "text_1": "Cruelty free",
+            "icon_2": "alcohol_free",
+            "text_2": "Alcohol free",
+            "icon_3": "paraben_free",
+            "text_3": "Paraben free",
+            "icon_4": "vegan",
+            "text_4": "Vegan",
+            "icon_5": "organic",
+            "text_5": "Organic"
+          }
+        },
         "collapsible_tab_eLiYKa": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Overview",
@@ -70,6 +95,7 @@
         "collapsible_tab_NzcfND": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": true,
             "display_on_card": false,
             "icon": "none",
             "heading": "Description",
@@ -81,6 +107,7 @@
         "collapsible_tab_yATe8j": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Why you'll love it",
@@ -92,6 +119,7 @@
         "collapsible_tab_MtWH9W": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Sustainability",
@@ -103,6 +131,7 @@
         "collapsible_tab_3JtbDp": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Product safety",
@@ -114,6 +143,7 @@
         "collapsible_tab_Kc3GQn": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Ingredients",
@@ -125,6 +155,7 @@
         "collapsible_tab_MdeUiz": {
           "type": "collapsible_tab",
           "settings": {
+            "opened": false,
             "display_on_card": false,
             "icon": "none",
             "heading": "Directions",
@@ -185,28 +216,6 @@
             "height": 5
           }
         },
-        "icon-row": {
-          "type": "icon_row",
-          "settings": {
-            "display_on_card": true,
-            "uppercase_text": false,
-            "icon_alignment": "justify-start",
-            "icon_thickness": 1.2,
-            "background_color": "bg-transparent text-scheme-text",
-            "show_border": true,
-            "icon_size": "h-10 w-10",
-            "icon_1": "cruelty_free",
-            "text_1": "Cruelty free",
-            "icon_2": "alcohol_free",
-            "text_2": "Alcohol free",
-            "icon_3": "paraben_free",
-            "text_3": "Paraben free",
-            "icon_4": "vegan",
-            "text_4": "Vegan",
-            "icon_5": "organic",
-            "text_5": "Organic"
-          }
-        },
         "features-list": {
           "type": "features_list",
           "settings": {
@@ -246,6 +255,7 @@
         "title",
         "price",
         "inventory_status_jXKetq",
+        "icon-row",
         "collapsible_tab_eLiYKa",
         "collapsible_tab_NzcfND",
         "collapsible_tab_yATe8j",
@@ -259,7 +269,6 @@
         "buy-buttons",
         "complementary",
         "spacer",
-        "icon-row",
         "features-list",
         "tabs"
       ],
