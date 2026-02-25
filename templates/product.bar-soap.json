@@ -205,7 +205,7 @@
           "type": "complementary",
           "settings": {
             "block_heading": "Pairs well with",
-            "product_list_limit": 4,
+            "product_list_limit": 3,
             "product_tile_style": "mini",
             "enable_quick_buy": true
           }
