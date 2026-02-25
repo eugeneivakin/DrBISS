@@ -56,6 +56,29 @@
             "show_inventory_quantity": false
           }
         },
+        "icon-row": {
+          "type": "icon_row",
+          "disabled": true,
+          "settings": {
+            "display_on_card": true,
+            "uppercase_text": false,
+            "icon_alignment": "justify-start",
+            "icon_thickness": 1.2,
+            "background_color": "bg-transparent text-scheme-text",
+            "show_border": true,
+            "icon_size": "h-10 w-10",
+            "icon_1": "cruelty_free",
+            "text_1": "Cruelty free",
+            "icon_2": "alcohol_free",
+            "text_2": "Alcohol free",
+            "icon_3": "paraben_free",
+            "text_3": "Paraben free",
+            "icon_4": "vegan",
+            "text_4": "Vegan",
+            "icon_5": "organic",
+            "text_5": "Organic"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -108,29 +131,6 @@
             "height": 5
           }
         },
-        "icon-row": {
-          "type": "icon_row",
-          "disabled": true,
-          "settings": {
-            "display_on_card": true,
-            "uppercase_text": false,
-            "icon_alignment": "justify-start",
-            "icon_thickness": 1.2,
-            "background_color": "bg-transparent text-scheme-text",
-            "show_border": true,
-            "icon_size": "h-10 w-10",
-            "icon_1": "cruelty_free",
-            "text_1": "Cruelty free",
-            "icon_2": "alcohol_free",
-            "text_2": "Alcohol free",
-            "icon_3": "paraben_free",
-            "text_3": "Paraben free",
-            "icon_4": "vegan",
-            "text_4": "Vegan",
-            "icon_5": "organic",
-            "text_5": "Organic"
-          }
-        },
         "features-list": {
           "type": "features_list",
           "disabled": true,
@@ -172,13 +172,13 @@
         "title",
         "price",
         "inventory_status_h7qqXQ",
+        "icon-row",
         "description",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",
         "complementary",
         "spacer",
-        "icon-row",
         "features-list",
         "tabs"
       ],
