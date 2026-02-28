@@ -93,6 +93,7 @@
     "social_youtube_link": "https://www.youtube.com/user/shopify",
     "cart_icon": "bag",
     "enable_free_shipping_progress_in_cart": true,
+    "free_shipping_threshold": "30",
     "navigation_font": "font-main",
     "navigation_uppercase": false,
     "product_tiles_quick_buy": true,
