@@ -328,7 +328,7 @@
         "shape-divider-feature-text-1"
       ],
       "settings": {
-        "rich_text": "This lightweight balm melts in your skin into subtle notes of bergamot and shea butter. It helps repair and restore your skin’s natural protective barrier without leaving a greasy feeling.",
+        "rich_text": "{{ product.metafields.custom.feature_text.value }}",
         "mobile_text_scale": 4,
         "desktop_text_scale": 9,
         "display_on_card": false,
