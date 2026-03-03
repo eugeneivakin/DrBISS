@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1.jpg",
             "title": "Handcrafted Natural Soaps",
             "richtext": "Pure ingredients for your everyday care",
-            "cta_url": "shopify://collections/frontpage",
+            "cta_url": "shopify://collections",
             "cta_text": "Shop Now",
             "place_content": "place-content-end-start",
             "text_align": "text-left",
