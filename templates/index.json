@@ -421,6 +421,21 @@
         "use_gradient_background": false
       }
     },
+    "rich_text_QRULck": {
+      "type": "rich-text",
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "title": "",
+        "heading_size": "heading-standard",
+        "rich_text": "<p>Dr. BISS is a brand owned by Biss Chemical LLC makes simple, skin-friendly essentials with a clean ingredient mindset. Our palm-oil-free bar and liquid soaps are crafted from a short list of plant-based oils for a rich lather and a smooth, comfortable feel. Vegan, sulfate-free, and clearly labeled - everyday care made easy.</p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-1/2",
+        "button_link": "",
+        "button_label": "Shop Now",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
     "newsletter": {
       "type": "newsletter",
       "blocks": {
@@ -470,6 +485,7 @@
     "featured_collection_xHCFDW",
     "featured_testimonials_ymJpd6",
     "testimonials_VW9gz8",
+    "rich_text_QRULck",
     "newsletter"
   ]
 }
