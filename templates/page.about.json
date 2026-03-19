@@ -46,7 +46,7 @@
         "height": "pt-600",
         "place_content": "place-content-center-center",
         "text_align": "text-center",
-        "title": "About Aura",
+        "title": "About Us",
         "heading_size": "heading-feature",
         "richtext": "",
         "cta_url": "",
@@ -60,7 +60,7 @@
       "settings": {
         "title": "Our Story",
         "heading_size": "heading-standard",
-        "rich_text": "<p>Aura was born from a simple belief: skincare should be a holistic experience that nurtures both the skin and the planet. Founded in 2024, our journey began with a commitment to create products that align with the principles of sustainability, wellness, and ethical beauty. We set out to harness the power of nature’s finest ingredients, crafting skincare that not only enhances your natural glow but also respects the environment we all share.</p>",
+        "rich_text": "{{ page.content }}",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
