@@ -73,8 +73,9 @@
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
+        "image": "shopify://shop_images/il_1140xN.7687947574_csua.jpg",
         "crop": "",
-        "image_shape": "blob",
+        "image_shape": "default",
         "blob_type": 1,
         "rotate_image": 0,
         "image_position": "right",
