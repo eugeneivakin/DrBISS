@@ -60,7 +60,7 @@
       "settings": {
         "title": "Our Story",
         "heading_size": "heading-standard",
-        "rich_text": "{{ page.content }}",
+        "rich_text": "<p>{{ page.content }}</p>",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
@@ -80,30 +80,9 @@
         "image_position": "right",
         "image_size": "half",
         "disable_media_style": false,
-        "title": "Our mission",
+        "title": "Mission & Values",
         "heading_size": "heading-standard",
-        "richtext": "<p>At Aura, our mission is to empower you to feel confident in your skin while making a positive impact on the world around us. We believe that true beauty comes from within and that caring for your skin should never come at the expense of the earth. That’s why we’re dedicated to creating high-performance, plant-based skincare that is as good for you as it is for the planet. With every product, we strive to bring you closer to a more radiant you, while contributing to a more sustainable and beautiful world.</p>",
-        "text_alignment": "text-left",
-        "button_link": "",
-        "button_label": "Shop Now",
-        "color_scheme": "",
-        "use_gradient_background": false
-      }
-    },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "settings": {
-        "display_on_card": false,
-        "crop": "",
-        "image_shape": "blob",
-        "blob_type": 18,
-        "rotate_image": 0,
-        "image_position": "left",
-        "image_size": "half",
-        "disable_media_style": false,
-        "title": "Our commitment",
-        "heading_size": "heading-standard",
-        "richtext": "<p>We’re committed to transparency, sustainability, and innovation. Each of our formulas is meticulously crafted with ethically sourced, cruelty-free ingredients, and packaged in eco-friendly materials. We take pride in our small-batch production, ensuring that every product you receive is fresh and effective. Our AuraBoost™ technology, developed through years of research, delivers consistent results that you can see and feel.</p><p></p>",
+        "richtext": "<p>Simply, skin-friendly essentials. 6 Values: Simplicity, Clear labeling, Practical clean, Safety-first, Sustainable (realistic), Free Shipping $50+ US.<br/><br/></p>",
         "text_alignment": "text-left",
         "button_link": "",
         "button_label": "Shop Now",
@@ -154,7 +133,6 @@
     "image-with-text-overlay",
     "rich-text",
     "image-with-text-0",
-    "image-with-text-1",
     "newsletter"
   ]
 }
