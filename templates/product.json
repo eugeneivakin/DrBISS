@@ -494,7 +494,6 @@
         "question_7",
         "question_8"
       ],
-      "disabled": true,
       "settings": {
         "display_on_card": true,
         "heading_text_style": "heading",
