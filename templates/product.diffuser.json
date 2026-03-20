@@ -230,24 +230,6 @@
             "border_between_rows": true,
             "border_top_bottom": false
           }
-        },
-        "tabs": {
-          "type": "tabs",
-          "settings": {
-            "display_on_card": false,
-            "uppercase_heading": false,
-            "heading_1": "Ingredients",
-            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.</p>",
-            "page_content_1": "",
-            "heading_2": "Shipping & delivery",
-            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.</p>",
-            "page_content_2": "",
-            "heading_3": "",
-            "content_3": "<p>Display content in this tab</p>",
-            "page_content_3": "",
-            "tab_style": "underline",
-            "tab_color": "text"
-          }
         }
       },
       "block_order": [
@@ -269,8 +251,7 @@
         "buy-buttons",
         "complementary",
         "spacer",
-        "features-list",
-        "tabs"
+        "features-list"
       ],
       "settings": {
         "crop": "",
