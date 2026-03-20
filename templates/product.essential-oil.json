@@ -146,7 +146,7 @@
             "opened": false,
             "display_on_card": false,
             "icon": "none",
-            "heading": "Product safety",
+            "heading": "Ingredients",
             "uppercase_text": false,
             "content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
             "page": ""
