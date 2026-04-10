@@ -17,23 +17,26 @@
         "announcement_9dfkeB": {
           "type": "announcement",
           "settings": {
-            "text": "Announce something here1",
+            "text": "Free shipping on orders over $30",
             "link": ""
           }
         },
         "announcement_ghbirY": {
           "type": "announcement",
           "settings": {
-            "text": "Announce something here",
+            "text": "Free shipping on orders over $30!",
             "link": ""
           }
         }
       },
-      "block_order": ["announcement_9dfkeB", "announcement_ghbirY"],
+      "block_order": [
+        "announcement_9dfkeB",
+        "announcement_ghbirY"
+      ],
       "settings": {
         "home_page_only": false,
         "display": "slider",
-        "text": "Free shipping on all orders over $100",
+        "text": "Free shipping on orders over $30",
         "link": "",
         "color_scheme": "scheme1",
         "use_gradient_background": false,
@@ -55,7 +58,7 @@
         "show_all_navigation_links": true,
         "showcase_second_level_links": true,
         "crop": "aspect-w-1 aspect-h-1",
-        "header_layout": "navigation_left_logo_center",
+        "header_layout": "logo_left_navigation_center",
         "header_show_search": true,
         "sticky_header": true,
         "show_icons": true,
@@ -76,5 +79,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }

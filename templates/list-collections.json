@@ -24,7 +24,7 @@
             "rotate": 0,
             "show_sticker_on_mobile": false,
             "show_sticker_on_desktop": true,
-            "rotation_animation": "constantly_rotate",
+            "rotation_animation": "",
             "enable_parallax": false,
             "parallax_speed": 3,
             "color_scheme": "scheme6",
@@ -36,7 +36,7 @@
         "sticker-0"
       ],
       "settings": {
-        "layout": "carousel",
+        "layout": "grid",
         "crop": "aspect-w-1 aspect-h-1",
         "image_shape": "",
         "no_products": 4,
@@ -44,8 +44,8 @@
         "show_view_all": true,
         "display_on_card": true,
         "enable_quick_buy": true,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
         "slideshow_focus": "center",
         "mobile_slide_width": "three_fifths",
         "desktop_slide_width": 40,

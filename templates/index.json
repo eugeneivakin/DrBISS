@@ -15,9 +15,10 @@
         "slide_CBjAAz": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1.jpg",
-            "title": "Handcrafted Natural Soaps",
-            "richtext": "Pure ingredients for your everyday care",
+            "image": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1_ad90b4e5-7b2a-475c-aa5b-eb8fed853611.jpg",
+            "image_mobile": "shopify://shop_images/e82420cffcdd026e1b63f947c8526a55_1_2693a37e-69ff-4b57-bd15-8a712b0c6bbc.jpg",
+            "title": "Everyday care made easy.",
+            "richtext": "Vegan, sulfate-free, and clearly labeled",
             "cta_url": "shopify://collections",
             "cta_text": "Shop Now",
             "place_content": "place-content-end-start",
@@ -32,7 +33,7 @@
       "name": "t:sections.hero_slideshow.name",
       "settings": {
         "style": "full",
-        "height": "pt-half-screen-height",
+        "height": "pt-screen-height",
         "display_on_card": true,
         "display_content_below_image_on_mobile": false,
         "auto_rotate": false,
@@ -51,7 +52,8 @@
           "type": "icon",
           "settings": {
             "icon": "plane",
-            "text": "Bringing Soap to the World"
+            "text": "Bringing Soap to the World",
+            "subtext": "Delivered worldwide"
           }
         },
         "icon-1": {
@@ -59,7 +61,8 @@
           "disabled": true,
           "settings": {
             "icon": "alcohol_free",
-            "text": "Alcohol free"
+            "text": "Alcohol free",
+            "subtext": ""
           }
         },
         "icon-2": {
@@ -67,28 +70,32 @@
           "disabled": true,
           "settings": {
             "icon": "paraben_free",
-            "text": "Paraben free"
+            "text": "Paraben free",
+            "subtext": ""
           }
         },
         "icon-3": {
           "type": "icon",
           "settings": {
             "icon": "return",
-            "text": "Easy Returns"
+            "text": "Easy Returns",
+            "subtext": "Hassle-free, no questions asked"
           }
         },
         "icon-4": {
           "type": "icon",
           "settings": {
             "icon": "clock",
-            "text": "Fast Delivery"
+            "text": "Fast Delivery",
+            "subtext": "Ships within 1–2 business days"
           }
         },
         "icon-5": {
           "type": "icon",
           "settings": {
             "icon": "leaf",
-            "text": "Eco-Friendly"
+            "text": "Eco-Friendly",
+            "subtext": "100% plant-based ingredients"
           }
         }
       },
@@ -102,7 +109,7 @@
       ],
       "settings": {
         "title": "",
-        "max_width": 80,
+        "max_width": 60,
         "text_style": "body",
         "uppercase_text": false,
         "layout_on_mobile": "wrap",
@@ -111,6 +118,25 @@
         "background_color": "bg-scheme-card text-scheme-card-text",
         "show_border": true,
         "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "lifestyle_nature_YkL7mP": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/isbl_3360x840.84178489_feto06cr_1.webp",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "Rooted in Nature",
+        "heading_size": "heading-standard",
+        "richtext": "Our soaps are crafted with pure, natural ingredients — lavender, peppermint, turmeric — harvested from nature for your everyday care.",
+        "cta_url": "shopify://collections/bar-soaps",
+        "cta_text": "Shop Bar Soaps",
+        "color_scheme": "scheme5",
         "use_gradient_background": false
       }
     },
@@ -123,7 +149,7 @@
         "collection": "new-arrivals",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -131,8 +157,8 @@
         "slideshow_focus": "center",
         "mobile_slide_width": "three_fifths",
         "desktop_slide_width": 40,
-        "autoscroll_mode": "1",
-        "product_tiles_aspect_ratio": "",
+        "autoscroll_mode": "0",
+        "product_tiles_aspect_ratio": "aspect-w-1 aspect-h-1",
         "image_shape": "default",
         "color_scheme": "",
         "use_gradient_background": false,
@@ -152,7 +178,7 @@
         "collection": "bestsellers",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "grid",
         "products_per_row_mobile": "1",
@@ -160,7 +186,7 @@
         "slideshow_focus": "center",
         "mobile_slide_width": "three_fifths",
         "desktop_slide_width": 40,
-        "autoscroll_mode": "1",
+        "autoscroll_mode": "0",
         "product_tiles_aspect_ratio": "",
         "image_shape": "default",
         "color_scheme": "",
@@ -170,6 +196,25 @@
         "button_color": "",
         "button_text_color": "",
         "button_position": "center"
+      }
+    },
+    "lifestyle_botanical_Rm3kNq": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/395ae6abf93ede957294f5344158bdcb.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-start",
+        "text_align": "text-left",
+        "title": "Pure Botanical Ingredients",
+        "heading_size": "heading-standard",
+        "richtext": "Every bar is enriched with plant-based oils, essential herbs, and botanicals — no harsh chemicals, just nature’s best.",
+        "cta_url": "shopify://collections/essential-oils",
+        "cta_text": "Explore Essential Oils",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
       }
     },
     "featured_collection_xHCFDW": {
@@ -187,7 +232,7 @@
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
+            "tab_autoscroll_mode": "0"
           }
         },
         "tab_pPNpip": {
@@ -202,7 +247,7 @@
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
+            "tab_autoscroll_mode": "0"
           }
         },
         "tab_BUEtHP": {
@@ -217,7 +262,7 @@
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
+            "tab_autoscroll_mode": "0"
           }
         },
         "tab_xcRCia": {
@@ -232,7 +277,7 @@
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
+            "tab_autoscroll_mode": "0"
           }
         },
         "tab_Ne6dMY": {
@@ -247,7 +292,7 @@
             "tab_slideshow_focus": "center",
             "tab_mobile_slide_width": "three_fifths",
             "tab_desktop_slide_width": 40,
-            "tab_autoscroll_mode": "1"
+            "tab_autoscroll_mode": "0"
           }
         }
       },
@@ -265,7 +310,7 @@
         "collection": "bar-soaps",
         "no_products": 4,
         "show_view_all": false,
-        "enable_quick_buy": false,
+        "enable_quick_buy": true,
         "display_on_card": false,
         "layout": "tabs",
         "products_per_row_mobile": "1",
@@ -273,7 +318,7 @@
         "slideshow_focus": "center",
         "mobile_slide_width": "three_fifths",
         "desktop_slide_width": 40,
-        "autoscroll_mode": "1",
+        "autoscroll_mode": "0",
         "product_tiles_aspect_ratio": "",
         "image_shape": "default",
         "color_scheme": "",
@@ -283,6 +328,25 @@
         "button_color": "",
         "button_text_color": "",
         "button_position": "center"
+      }
+    },
+    "lifestyle_green_Xp4wRs": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/b921dda0f634b2b2f35587038be92cfb.jpg",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": false,
+        "style": "full",
+        "height": "pt-half-screen-height",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "From Nature, For You",
+        "heading_size": "heading-standard",
+        "richtext": "Feel the freshness of nature in every wash. Handcrafted with care, our products bring the outdoors to your daily routine.",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop All Products",
+        "color_scheme": "scheme5",
+        "use_gradient_background": false
       }
     },
     "featured_testimonials_ymJpd6": {
@@ -361,7 +425,9 @@
         "crop": "",
         "image_shape": "default",
         "color_scheme": "",
-        "use_gradient_background": false
+        "use_gradient_background": false,
+        "padding_top": 4,
+        "padding_bottom": 0
       }
     },
     "testimonials_VW9gz8": {
@@ -421,19 +487,57 @@
         "use_gradient_background": false
       }
     },
-    "rich_text_QRULck": {
-      "type": "rich-text",
-      "name": "t:sections.rich_text.name",
+    "why_choose_us": {
+      "type": "why-choose-us",
+      "blocks": {
+        "wcu_card_1": {
+          "type": "feature",
+          "settings": {
+            "emoji": "🔬",
+            "icon_bg": "#dde8f5",
+            "title": "Science-backed formulas",
+            "description": "Developed by university professors in chemistry & engineering — not marketing departments."
+          }
+        },
+        "wcu_card_2": {
+          "type": "feature",
+          "settings": {
+            "emoji": "🌿",
+            "icon_bg": "#dff0de",
+            "title": "Zero palm oil. Ever.",
+            "description": "Palm-free by principle. We use coconut oil, olive oil & glycerin for a lather that's good for you and the planet."
+          }
+        },
+        "wcu_card_3": {
+          "type": "feature",
+          "settings": {
+            "emoji": "💧",
+            "icon_bg": "#daeef7",
+            "title": "Transparently simple",
+            "description": "No parabens, no SLS, no dyes, no alcohols. Every ingredient earns its place — nothing hidden."
+          }
+        },
+        "wcu_card_4": {
+          "type": "feature",
+          "settings": {
+            "emoji": "♻️",
+            "icon_bg": "#fef3d0",
+            "title": "Sustainably minded",
+            "description": "Shorter, cleaner formulas mean less waste. Based in Austin, TX — crafted with care from the ground up."
+          }
+        }
+      },
+      "block_order": [
+        "wcu_card_1",
+        "wcu_card_2",
+        "wcu_card_3",
+        "wcu_card_4"
+      ],
       "settings": {
-        "title": "",
-        "heading_size": "heading-standard",
-        "rich_text": "<p>Dr. BISS is a brand owned by Biss Chemical LLC makes simple, skin-friendly essentials with a clean ingredient mindset. Our palm-oil-free bar and liquid soaps are crafted from a short list of plant-based oils for a rich lather and a smooth, comfortable feel. Vegan, sulfate-free, and clearly labeled - everyday care made easy.</p>",
-        "display_on_card": false,
-        "content_width_desktop": "lg:w-1/2",
-        "button_link": "",
-        "button_label": "Shop Now",
-        "color_scheme": "",
-        "use_gradient_background": false
+        "eyebrow": "Why Choose Us",
+        "heading": "Clean science. Real results.",
+        "subtitle": "Founded by chemists and engineers who asked: why does soap need 30 ingredients? We kept only what matters.",
+        "color_scheme": ""
       }
     },
     "newsletter": {
@@ -470,7 +574,7 @@
       ],
       "settings": {
         "title": "Sign up to our newsletter",
-        "richtext": "<p>Receive special offers and first look at new products.</p>",
+        "richtext": "<p>Discover the power of natural ingredients — notes of avocado, coconut and turmeric for anti-aging & dark-spot removal. Sign up for special offers and first look at new products.</p>",
         "display_on_card": false,
         "color_scheme": "scheme3",
         "use_gradient_background": false
@@ -480,12 +584,15 @@
   "order": [
     "hero_slideshow_n4GQYX",
     "icon-list",
+    "lifestyle_nature_YkL7mP",
     "featured_collection_tFkmTr",
     "featured_collection_BLDjni",
+    "lifestyle_botanical_Rm3kNq",
     "featured_collection_xHCFDW",
+    "lifestyle_green_Xp4wRs",
     "featured_testimonials_ymJpd6",
     "testimonials_VW9gz8",
-    "rich_text_QRULck",
+    "why_choose_us",
     "newsletter"
   ]
 }

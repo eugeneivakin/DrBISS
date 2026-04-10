@@ -173,6 +173,15 @@
             "text_align": "text-left"
           }
         },
+        "qty_discount": {
+          "type": "qty_discount",
+          "settings": {
+            "tier2_qty": 2,
+            "tier2_discount": 10,
+            "tier3_qty": 3,
+            "tier3_discount": 15
+          }
+        },
         "quantity-selector": {
           "type": "quantity_selector",
           "settings": {
@@ -230,6 +239,24 @@
             "border_between_rows": true,
             "border_top_bottom": false
           }
+        },
+        "tabs": {
+          "type": "tabs",
+          "settings": {
+            "display_on_card": false,
+            "uppercase_heading": false,
+            "heading_1": "Ingredients",
+            "content_1": "<p>Bilberry, cranberry extract, willow bark, rosewater, hyaluronic acid and glycerin.</p>",
+            "page_content_1": "",
+            "heading_2": "Shipping & delivery",
+            "content_2": "<p>Delivers Australia-wide within 7 days of purchase.</p>",
+            "page_content_2": "",
+            "heading_3": "",
+            "content_3": "<p>Display content in this tab</p>",
+            "page_content_3": "",
+            "tab_style": "underline",
+            "tab_color": "text"
+          }
         }
       },
       "block_order": [
@@ -246,12 +273,14 @@
         "collapsible_tab_Kc3GQn",
         "collapsible_tab_MdeUiz",
         "description",
+        "qty_discount",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",
         "complementary",
         "spacer",
-        "features-list"
+        "features-list",
+        "tabs"
       ],
       "settings": {
         "crop": "",
@@ -307,8 +336,8 @@
       ],
       "settings": {
         "rich_text": "{{ product.metafields.custom.feature_text.value }}",
-        "mobile_text_scale": 4,
-        "desktop_text_scale": 9,
+        "mobile_text_scale": 2,
+        "desktop_text_scale": 5,
         "display_on_card": false,
         "apply_effects": false,
         "content_width_desktop": "lg:w-full",
@@ -680,7 +709,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I contact you?",
-            "answer": "<p>Email: <a href=\"mailto:info@bisschemical.com\" title=\"mailto:info@bisschemical.com\">info@bisschemical.com</a></p>"
+            "answer": "<p>Email: <a href=\"mailto:info@drbiss.com\" title=\"mailto:info@drbiss.com\">info@drbiss.com</a></p>"
           }
         }
       },
@@ -747,6 +776,31 @@
         "color_scheme": "scheme1",
         "use_gradient_background": false
       }
+    },
+    "177552284292439428": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_p4rPfK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_p4rPfK"
+      ],
+      "settings": {
+        "apply_vertical_spacing": true,
+        "apply_horizontal_spacing": true,
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-full",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
     }
   },
   "order": [
@@ -758,6 +812,7 @@
     "faq",
     "faq_VmifMc",
     "17696879010161131f",
-    "related-products"
+    "related-products",
+    "177552284292439428"
   ]
 }

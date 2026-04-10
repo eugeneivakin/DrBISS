@@ -131,7 +131,7 @@ var product_default = ({
     }
     this.getOptions();
     this.$watch("currentMediaId", (value, oldValue) => {
-      if (showThumbnailsOnMobile) {
+      if (showThumbnailsOnMobile || this.isUsingSlideshowToDisplayMedia) {
         this.$root.dispatchEvent(
           new CustomEvent("shapes:product:mediachange", {
             bubbles: true,

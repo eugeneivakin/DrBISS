@@ -14,62 +14,37 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "tagline-and-social-links-0": {
+        "brand-social": {
           "type": "tagline_and_social_links",
           "settings": {
-            "tagline": "",
+            "tagline": "Dr. Biss — natural soaps and personal care crafted with pure botanical ingredients. Vegan, sulfate-free, and clearly labeled.",
             "show_social_icons": true
           }
         },
-        "menus-0": {
+        "collections-col": {
           "type": "menus",
           "settings": {
-            "show_menu_headings": false,
-            "linklist_1": "footer-menu",
-            "linklist_2": "",
+            "show_menu_headings": true,
+            "linklist_1": "footer-collections",
+            "linklist_2": "footer-menu",
             "linklist_3": ""
-          }
-        },
-        "newsletter-0": {
-          "type": "newsletter",
-          "disabled": true,
-          "settings": {
-            "newsletter_heading": "Sign up to our newsletter"
           }
         }
       },
       "block_order": [
-        "tagline-and-social-links-0",
-        "menus-0",
-        "newsletter-0"
+        "brand-social",
+        "collections-col"
       ],
       "settings": {
-        "show_payment_icons": false,
-        "show_country_selector": true,
-        "show_locale_selector": true,
-        "color_scheme": "scheme1",
-        "use_gradient_background": false
-      }
-    },
-    "hero-logo": {
-      "type": "hero-logo",
-      "disabled": true,
-      "settings": {
-        "home_page_only": false,
-        "mobile_text_scale": 6,
-        "desktop_text_scale": 10,
-        "alignment": "center",
-        "logo_max_width": 100,
-        "disable_vertical_spacing": false,
-        "enable_overlay": false,
-        "overlay_offset": 100,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_locale_selector": false,
         "color_scheme": "scheme1",
         "use_gradient_background": false
       }
     }
   },
   "order": [
-    "footer",
-    "hero-logo"
+    "footer"
   ]
 }

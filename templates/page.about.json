@@ -9,121 +9,162 @@
  */
 {
   "sections": {
-    "image-with-text-overlay": {
+    "hero": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "shape-divider-image-with-text-overlay-0": {
-          "type": "shape_divider",
-          "settings": {
-            "target_section": "above",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-2-patterned_1200x43",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        },
-        "shape-divider-image-with-text-overlay-1": {
-          "type": "shape_divider",
-          "settings": {
-            "target_section": "below",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-2-patterned_1200x43",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        }
-      },
-      "block_order": [
-        "shape-divider-image-with-text-overlay-0",
-        "shape-divider-image-with-text-overlay-1"
-      ],
       "settings": {
+        "image": "shopify://shop_images/b6730fb7f9b1a5128c9771463b82eff3.jpg",
         "display_on_card": false,
-        "display_content_below_image_on_mobile": true,
+        "display_content_below_image_on_mobile": false,
         "style": "full",
-        "height": "pt-600",
+        "height": "pt-700",
         "place_content": "place-content-center-center",
         "text_align": "text-center",
-        "title": "About Us",
-        "heading_size": "heading-feature",
-        "richtext": "",
-        "cta_url": "",
-        "cta_text": "Shop Now",
+        "title": "About Dr. Biss",
+        "heading_size": "heading-standard",
+        "richtext": "Natural soaps and personal care, crafted with pure botanical ingredients since 2024.",
+        "cta_url": "shopify://collections",
+        "cta_text": "Shop Our Products",
         "color_scheme": "scheme5",
         "use_gradient_background": false
       }
     },
-    "rich-text": {
+    "story": {
       "type": "rich-text",
       "settings": {
         "title": "Our Story",
         "heading_size": "heading-standard",
-        "rich_text": "<p>{{ page.content }}</p>",
+        "rich_text": "<p>Dr. BISS began with two founders — <strong>a chemist</strong> and an <strong>industrial engineer</strong>, both university professors — who asked a simple question: <em>Why shouldn’t everyday soap be clean, effective, and affordable?</em> After studying the U.S. market, we found that many products were either too synthetic, too complicated, or priced out of reach.</p><p>That insight became Dr. BISS: a line of soaps and home - care essentials designed to help households move away from overly complex, synthetic-heavy formulas. Our goal is to offer <strong>affordable, accessible</strong> products — crafted with simple ingredients and clear labeling — so more families can choose options that avoid common additives like <strong>sulfates and parabens</strong> in their daily routines.</p>",
         "display_on_card": false,
         "content_width_desktop": "lg:w-2/3",
         "button_link": "",
-        "button_label": "Shop Now",
-        "color_scheme": "",
+        "button_label": "",
+        "color_scheme": "scheme2",
         "use_gradient_background": false
       }
     },
-    "image-with-text-0": {
+    "mission": {
       "type": "image-with-text",
       "settings": {
         "display_on_card": false,
-        "image": "shopify://shop_images/il_1140xN.7687947574_csua.jpg",
-        "crop": "",
+        "image": "shopify://shop_images/make-an-image-banner-withoput-any-text-for-section-at-about-us-mood-mission-to-create-simple-skin-friendly-essentials-bar-soap-liquid-soap-essential-oils-and-diffusers-made-with-a-cle.png",
+        "crop": "aspect-w-4 aspect-h-3",
         "image_shape": "default",
         "blob_type": 1,
         "rotate_image": 0,
         "image_position": "right",
         "image_size": "half",
         "disable_media_style": false,
-        "title": "Mission & Values",
+        "title": "Our Mission",
         "heading_size": "heading-standard",
-        "richtext": "<p>Simply, skin-friendly essentials. 6 Values: Simplicity, Clear labeling, Practical clean, Safety-first, Sustainable (realistic), Free Shipping $50+ US.<br/><br/></p>",
+        "richtext": "<p>To create <strong>simple, skin-friendly essentials</strong>—bar soap, liquid soap, essential oils, and diffusers—made with a clean ingredient mindset and <strong>clear labeling</strong>, so everyday care is easy.</p>",
         "text_alignment": "text-left",
-        "button_link": "",
-        "button_label": "Shop Now",
+        "button_link": "shopify://collections",
+        "button_label": "Shop All Products",
         "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "promise": {
+      "type": "rich-text",
+      "settings": {
+        "title": "",
+        "heading_size": "heading-standard",
+        "rich_text": "<p><em>“Affordable, accessible products—crafted with simple ingredients.”</em></p>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-1/2",
+        "button_link": "",
+        "button_label": "",
+        "color_scheme": "scheme2",
+        "use_gradient_background": false
+      }
+    },
+    "values": {
+      "type": "image-with-text",
+      "settings": {
+        "display_on_card": false,
+        "image": "shopify://shop_images/a83c5df73b53c6e683f85b33831acf53.jpg",
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "default",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "left",
+        "image_size": "half",
+        "disable_media_style": false,
+        "title": "What We Stand For",
+        "heading_size": "heading-standard",
+        "richtext": "<p><strong>Simplicity that performs</strong> — Short ingredient lists and practical formulas designed for effective rinsing.</p><p><strong>Clear labeling &amp; transparency</strong> — Straightforward communication about product contents without misleading claims.</p><p><strong>Practical clean standards</strong> — Formulated without palm oil, parabens, sulfates, dyes, or alcohols.</p><p><strong>Everyday safety-first</strong> — Accessible safety instructions across all product categories.</p><p><strong>Realistic sustainability</strong> — Reducing unnecessary additives and promoting efficient product use.</p>",
+        "text_alignment": "text-left",
+        "button_link": "shopify://pages/ingredients-transparency",
+        "button_label": "View Our Ingredients",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
+    "icons": {
+      "type": "icon-list",
+      "blocks": {
+        "icon-vegan": {
+          "type": "icon",
+          "settings": {
+            "icon": "leaf",
+            "text": "100% Vegan"
+          }
+        },
+        "icon-sulfate": {
+          "type": "icon",
+          "settings": {
+            "icon": "alcohol_free",
+            "text": "Sulfate-Free"
+          }
+        },
+        "icon-eco": {
+          "type": "icon",
+          "settings": {
+            "icon": "globe",
+            "text": "Eco Packaging"
+          }
+        },
+        "icon-transparent": {
+          "type": "icon",
+          "settings": {
+            "icon": "eye",
+            "text": "Full Transparency"
+          }
+        },
+        "icon-delivery": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "text": "Fast Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "icon-vegan",
+        "icon-sulfate",
+        "icon-eco",
+        "icon-transparent",
+        "icon-delivery"
+      ],
+      "settings": {
+        "title": "",
+        "max_width": 80,
+        "text_style": "body",
+        "uppercase_text": false,
+        "layout_on_mobile": "wrap",
+        "icon_alignment_on_desktop": "md:justify-between",
+        "icon_thickness": 1.3,
+        "background_color": "bg-scheme-card text-scheme-card-text",
+        "show_border": true,
+        "color_scheme": "scheme2",
         "use_gradient_background": false
       }
     },
     "newsletter": {
       "type": "newsletter",
-      "blocks": {
-        "shape-divider-newsletter-0": {
-          "type": "shape_divider",
-          "settings": {
-            "target_section": "above",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-3-patterned_1200x84",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        },
-        "shape-divider-newsletter-1": {
-          "type": "shape_divider",
-          "settings": {
-            "target_section": "below",
-            "target_section_color_scheme": "scheme1",
-            "style": "waves-3-patterned_1200x84",
-            "flip_horizontal": false,
-            "enable_animation": false,
-            "animation_direction": ""
-          }
-        }
-      },
-      "block_order": [
-        "shape-divider-newsletter-0",
-        "shape-divider-newsletter-1"
-      ],
       "settings": {
-        "title": "Sign up to our newsletter",
-        "richtext": "<p>Receive special offers and first look at new products.</p>",
+        "title": "Stay Connected",
+        "richtext": "<p>Sign up for exclusive offers, new product launches, and tips for a cleaner daily routine.</p>",
         "display_on_card": false,
         "color_scheme": "scheme3",
         "use_gradient_background": false
@@ -131,9 +172,12 @@
     }
   },
   "order": [
-    "image-with-text-overlay",
-    "rich-text",
-    "image-with-text-0",
+    "hero",
+    "story",
+    "mission",
+    "promise",
+    "values",
+    "icons",
     "newsletter"
   ]
 }

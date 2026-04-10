@@ -87,6 +87,15 @@
             "text_align": "text-left"
           }
         },
+        "qty_discount_BcMGwP": {
+          "type": "qty_discount",
+          "settings": {
+            "tier2_qty": 2,
+            "tier2_discount": 10,
+            "tier3_qty": 3,
+            "tier3_discount": 15
+          }
+        },
         "quantity-selector": {
           "type": "quantity_selector",
           "settings": {
@@ -174,6 +183,7 @@
         "inventory_status_h7qqXQ",
         "icon-row",
         "description",
+        "qty_discount_BcMGwP",
         "quantity-selector",
         "variant-picker",
         "buy-buttons",
@@ -236,8 +246,8 @@
       ],
       "settings": {
         "rich_text": "{{ product.metafields.custom.feature_text.value }}",
-        "mobile_text_scale": 4,
-        "desktop_text_scale": 9,
+        "mobile_text_scale": 2,
+        "desktop_text_scale": 5,
         "display_on_card": false,
         "apply_effects": false,
         "content_width_desktop": "lg:w-full",
@@ -416,6 +426,95 @@
         "use_gradient_background": false
       }
     },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What skin types are Aura products suitable for?",
+            "answer": "<p>Our products are designed to be gentle and effective for all skin types, including sensitive, dry, oily, and combination skin. Each formula is crafted with plant-based ingredients that work harmoniously with your skin’s natural balance.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Are Aura products cruelty-free?",
+            "answer": "<p>Yes, absolutely. We are proudly cruelty-free and do not test our products on animals at any stage of development. We believe in ethical beauty and only partner with suppliers who share our values.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "Do you use synthetic fragrances in your products?",
+            "answer": "<p>No, we never use synthetic fragrances. Our products are naturally scented with essential oils and botanical extracts, ensuring a gentle and pleasant experience without the use of artificial chemicals.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What ingredients do you avoid in your formulations?",
+            "answer": "<p>At Aura, we avoid harmful ingredients such as parabens, sulfates, phthalates, synthetic dyes, and artificial fragrances. We prioritize clean, plant-based ingredients that are both safe and effective.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How should I store my Aura skincare products?",
+            "answer": "<p>To maintain the freshness and efficacy of our products, we recommend storing them in a cool, dry place, away from direct sunlight. Our eco-friendly packaging helps protect the integrity of the ingredients.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What is your return policy?",
+            "answer": "<p>We want you to love your Aura experience. If you’re not completely satisfied with your purchase, we offer a 30-day return policy. Simply contact our customer service team, and they’ll guide you through the process.</p>"
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "How does Aura ensure sustainability in its packaging?",
+            "answer": "<p>We’re committed to sustainability in every aspect of our business. Our packaging is made from eco-friendly materials, including recycled and recyclable components, and we are always exploring new ways to reduce our environmental impact.</p>"
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "icon": "none",
+            "title": "What are the shipping options and how long does delivery take?",
+            "answer": "<p>We offer standard and expedited shipping options. Standard shipping typically takes 3-5 business days within the continental US, while expedited options are available for faster delivery. All orders are shipped in eco-friendly packaging.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7",
+        "question_8"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_on_card": true,
+        "heading_text_style": "heading",
+        "two_columns_desktop": true,
+        "title": "FAQ",
+        "richtext": "Find the most frequently asked questions below.",
+        "color_scheme": "",
+        "use_gradient_background": false
+      }
+    },
     "faq_VmifMc": {
       "type": "faq",
       "blocks": {
@@ -520,7 +619,7 @@
           "settings": {
             "icon": "none",
             "title": "How do I contact you?",
-            "answer": "<p>Email: <a href=\"mailto:info@bisschemical.com\" title=\"mailto:info@bisschemical.com\">info@bisschemical.com</a></p>"
+            "answer": "<p>Email: <a href=\"mailto:info@drbiss.com\" title=\"mailto:info@drbiss.com\">info@drbiss.com</a></p>"
           }
         }
       },
@@ -595,6 +694,7 @@
     "feature-text",
     "image-with-highlights",
     "featured-testimonials",
+    "faq",
     "faq_VmifMc",
     "17696879010161131f",
     "related-products"
